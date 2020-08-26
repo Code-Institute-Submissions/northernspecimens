@@ -5,7 +5,11 @@ body {
     background-color: white;
 }
 
-
+header {
+    background-color: white;
+    height: 50px;
+    box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+}
 h1 {
     float: left;
     color: black;
@@ -25,7 +29,7 @@ h1 {
 }
 
 .wrapper .container{
-  width: 200px;
+  width: 100px;
 }
 
 .wrapper .hamburger_btn{
@@ -41,8 +45,6 @@ h1 {
 .wrapper .hamburger_btn > div{
   position: absolute;
   top: 45%;
-  left: 25%;
-  width: 50%;
   height: 3px;
   background:white;
   border-radius: 50px;
@@ -58,7 +60,7 @@ h1 {
 }
 
 .wrapper .container .menu{
-  width: 180px;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   background: black;
@@ -69,13 +71,14 @@ h1 {
 }
 
 .wrapper .container .menu ul li{
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   transition: all 0.2s linear;
+  list-style-type: none;
 }
 
 .wrapper .container .menu ul li a{
-  padding: 10px;
+  padding: 5px;
   font-size: 12px;
   color: #757575;
   display: block;
