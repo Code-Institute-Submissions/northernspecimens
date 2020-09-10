@@ -24,3 +24,20 @@ function carousel() {
 }
 $("mySlides").fadeOut(1000,linear,function(){
 });
+
+/*This javascript will produce the hidden div containing the form to order the taxidermy courses*/ 
+
+function myFunction() {
+ var showWet = document.getElementById("showWet");
+ var myBtn = document.getElementById("myBtn");
+
+   if (showWet.style.display === "none") {
+    showWet.style.display = "inline";
+    btnText.innerHTML = "Learn more";
+    moreText.style.display = "none";
+  } else {
+    showWet.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
