@@ -13,13 +13,13 @@ scroll-behavior: smooth;
 
 body {
     font-family: 'Cinzel', serif;
-    font-family: 'Montserrat', sans-serif;  
+    font-family: 'Montserrat', sans-serif; 
+    height: auto; 
 }
 
 header {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
-    height: 600px;
 }
 
 h1 {
@@ -153,7 +153,7 @@ nav {
   }
 }
 
-header {
+#home-page {
   min-height: 100vh;
   background: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)),
   background url("https://i.imgur.com/M9JGebg.jpg") center/cover no-repeat;
@@ -190,10 +190,16 @@ header {
 .title span {
   color: var(--clr-secondary);
 }
-#about
-{
-height: auto;
-overflow: hidden;
+#about {
+    height: auto;
+    overflow: hidden;
+}
+
+#about-text {
+    background-color: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)), lightgrey;
+}
+#about-two {
+    background-color: lightgrey, linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7));
 }
 #about-two h2 {
     padding-top: 10px;
@@ -202,52 +208,75 @@ overflow: hidden;
     height: auto;
     overflow:hidden;
 }
+#fish img {
+    box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
 
+}
 #learn {
     height: auto;
     overflow: hidden;
-    background-color: black;
 }
 #learn .title h1 {
-    color: white;
+    color: grey;
 }
 #info {
     border: 1px solid white;
+    background-color: lightgrey;
 }
 #info h2 {
     text-align: center;
       font-family: 'Cinzel', serif;
-      color: white;
+      color: grey;
 }
 
 #info li {
     text-align: center;
-    color: white;
+    color: grey;
     list-style-type: none;
     font-size: 3vw;
     padding: 5px;
 }
 
-#owl {
-    margin-bottom: 10px;
+#skull img {
+    box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+}
+#info .btn {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    transform: translate(100%, -20%);
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
 }
 
+#info .btn:hover {
+    color: white;
+    background-color: lightgrey;
+}
+
+#reviews {
+    height: 100px;
+    background-color: lightgrey;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+
+}
 
 footer {
-    align-content: center;
-    text-align: center;
-    padding: 5px;
-    bottom: 0%;
-    background-color: white;
-    box-shadow: 0px -4px 3px rgba(182, 182, 182, 0.699);
+height: 100px;
+position: relative;
+bottom: 0;
 }
+
 
 footer p {
     padding: 5px;
     margin-top: 10px;
+    font-size: 3vw;
 }
 footer ul {
-    margin-left: 10px;
     text-align: center;
 }
 footer li {
@@ -257,7 +286,7 @@ footer li {
 }
 footer a i {
     color: lightgrey;
-    font-size: 30px;
+    font-size: 5vw;
     margin-left: 10px;
 }
 
@@ -290,3 +319,46 @@ footer a i {
   text-align: center;
 }
 
+
+
+#thank-header {
+    height: auto;
+
+}
+.thank-bird {
+  min-height: 50vh;
+  background: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)),
+  background url("https://i.imgur.com/OqaF2c3.jpg") center/cover no-repeat; 
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+  overflow: hidden;
+  position: relative;
+}
+
+.thank-bird-text {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-color: whitesmoke;
+    margin: 10px;
+    transform: translate(20%, 20%);
+    align-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+}
+.thank-bird-text h3 {
+    padding: 5px;
+    text-decoration: underline;
+    text-align: center;
+    color: grey;
+}
+.thank-bird-text h4 {
+    padding: 5px;
+    text-align: center;
+    color: grey;
+}
+.thank-bird-text h6 {
+    padding: 5px;
+    text-align: center;
+    color: grey;
+}
