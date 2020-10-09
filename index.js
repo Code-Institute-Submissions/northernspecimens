@@ -10,6 +10,15 @@ navToggle.addEventListener("click", function () {
     $( "#datepicker" ).datepicker();
   } );
 
+  function validateForm() {
+  var x = document.forms["myForm"].value;
+  if (x == "") {
+    alert("Please enter details");
+    return false;
+  }
+}
+
+
 
 //this js code was taken from s3schools to create an automatic slideshow on the home page under "Our Services" https://www.w3schools.com/w3css/w3css_slideshow.asp//
 var slideIndex = 0;
@@ -35,7 +44,7 @@ $("mySlides").fadeOut(1000,linear,function(){
 /*This javascript will produce the hidden div containing the form to order the taxidermy courses*/ 
 
 function myFunction() {
- var showWet = document.getElementById("showWet");
+ var showWet = document.getElementById("readMe");
  var myBtn = document.getElementById("myBtn");
 
    if (showWet.style.display === "none") {
@@ -49,8 +58,18 @@ function myFunction() {
   }
 }
 
-$('#datepicker').pickadate({
-  today: '',
-  clear: 'Clear selection',
-  close: 'Cancel'
-})
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
