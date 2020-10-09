@@ -6,6 +6,10 @@ navToggle.addEventListener("click", function () {
   links.classList.toggle("show-links");
 });
 
+ $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+
 
 //this js code was taken from s3schools to create an automatic slideshow on the home page under "Our Services" https://www.w3schools.com/w3css/w3css_slideshow.asp//
 var slideIndex = 0;
@@ -25,6 +29,9 @@ function carousel() {
 $("mySlides").fadeOut(1000,linear,function(){
 });
 
+/*this javascript is for the reviews section*/
+
+
 /*This javascript will produce the hidden div containing the form to order the taxidermy courses*/ 
 
 function myFunction() {
@@ -41,3 +48,9 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+
+$('#datepicker').pickadate({
+  today: '',
+  clear: 'Clear selection',
+  close: 'Cancel'
+})
