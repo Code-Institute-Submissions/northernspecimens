@@ -8,7 +8,12 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/cerulean/bootstrap.min.css">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
                 <link rel="stylesheet" href="assets/css/style.css">
-	            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     </head>
 <body>
         <nav>
@@ -43,7 +48,7 @@
 <div class="col-12">
 <div id ="book-content">
 <div id="form-section">
-<form action="thank.html">
+<form name="myForm" action="thank.html" onsubmit="return validateForm()" method="post">
   <div class="form-group">
   <label for ="fname">Name:</label>
   <input type="text" id="name" name="name" class="form-control" placeholder="Enter Name">
@@ -76,13 +81,14 @@
     <label for="mammals">Mammals</label>
   <input type="radio" id="mammals" name="course" value="mammals">
   </div>
+    <p>Date: <input type="text" id="datepicker"></p>
       <button type="submit" class="btn btn-white">Submit</button>
   </div>
 </div>
 </div>
 </form>
 </section>
-<footer class="section">
+  <footer class="section">
 <p>Copyright &copy; Northern Specimens<br>
 Company 2018. All rights reserved.</p>
 <ul>
@@ -93,7 +99,6 @@ Company 2018. All rights reserved.</p>
 </ul>
 </footer>
 <script src="index.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
