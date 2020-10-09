@@ -165,23 +165,24 @@ nav {
   text-align: center;
   margin-top: 10px;
 }
+.banner p {
+    color: black;
+}
+.banner .btn {   
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+ }
+ .banner .btn:hover {
+    color: white;
+    background-color: black;
+ }
 
-.container h1 {
-  color: var(--clr-white);
-  text-transform: uppercase;
-}
-.container p {
-  color: var(--clr-white);
-  max-width: 25rem;
-  margin: 0 auto;
-  margin-bottom: 1.25rem;
-}
-
-@media screen and (min-width: 768px) {
-  .container p {
-    max-width: 40rem;
-  }
-}
 /* sections and title */
 /*This nifty title code helped make this more simpler*/
 .title h1 {
@@ -214,6 +215,14 @@ nav {
 #fish img {
     box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
 }
+
+@media screen and (min-width: 1025PX) { #about-text p, #about-two p
+    {
+        font-size: 30px;
+    }
+}
+
+
 
 /**/
 .slide-container {
@@ -270,15 +279,16 @@ nav {
     text-align: center;
     justify-content: center;
     position: relative;
-    transform: translate(100%, -20%);
     color: black;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 #info .btn:hover {
     color: white;
-    background-color: lightgrey;
+    background-color: black;
 }
 
 /*css for review section on home page*/
@@ -296,10 +306,19 @@ nav {
     justify-content: center;
     position: relative;
     margin: 10px;
+    overflow: hidden;
     color: black;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
 }
+
+#reviews .btn:hover {
+    color: white;
+    background-color: black;
+}
+
+
+
 #review-block {
    background-color: white;
    padding: 10px;
@@ -325,6 +344,13 @@ nav {
     color: black;
     font-size: 2vw;
     padding-bottom: 5px;
+}
+
+
+@media screen and (min-width: 1025PX) { #reviews
+    {
+        height: 350px;
+    }
 }
 
 /*footer code*/
