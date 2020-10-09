@@ -437,12 +437,12 @@ footer a i {
      overflow: hidden;
      position: relative;
      margin-bottom: 10px;
-     height: 600px;
+     height: 700px;
 }
 
 #book-content {
     background-color: lightgray;
-    height: 500px;
+    height: 600px;
     margin-top: 20px;
     opacity: 0.5;
 }
@@ -468,6 +468,21 @@ footer a i {
     color: white;
     background-color: black;
 }
+
+#location-content {
+    height: 500px;
+     background: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)),
+     background url("https://i.imgur.com/2oAD4R0.jpg") center/cover no-repeat;
+}
+
+#location-content h2 {
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
 label {
     padding: 10px;
     margin-left: 2%;
@@ -477,6 +492,27 @@ label {
 input {
     width: 80%;
 }
+
+#datepicker {
+    margin: 10px;
+}
+
+/*find us css*/
+
+#find-us {
+    background: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)),
+    background url("https://i.imgur.com/M9JGebg.jpg") center/cover no-repeat;
+    height: 500px;
+    padding: 10px;
+}
+
+#find-us h4 {
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
 /*this css code alters the thank page html. The below code was set for screens between 768 and 1025px.*/
 
 }
