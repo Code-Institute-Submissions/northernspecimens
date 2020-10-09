@@ -278,12 +278,11 @@ nav {
 #info .btn {
     text-align: center;
     justify-content: center;
+    display: flex;
     position: relative;
     color: black;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
-    margin: 0 auto;
-    overflow: hidden;
 }
 
 #info .btn:hover {
@@ -387,8 +386,97 @@ footer a i {
 
 /*https://stackoverflow.com/questions/9792816/apply-drop-shadow-to-border-top-only/ link for top box shadow*/
 
-/*css for review section on home page*/
+/*css for courses page*/
+#course-info {
+    margin: 50px;
+    overflow: hidden;
+    padding: 5px;
+}
+#course-info h4 {
+    text-align: center;
+    color:black;
+    overflow: hidden;
+}
+#courses h3, #course-info h3, #courses-two h3 {
+    color: black;
+    padding-top: 5px;
+    margin: 5px;
+}
+.collapsible {
+    height: 
+}
 
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+/*https://www.w3schools.com/howto/howto_css_center_button.asp used to center buttons*/
+
+#courses .btn, #courses-two .btn, #course-info .btn {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin: 5px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+}
+
+#courses .btn:hover, #courses-two .btn:hover, #course-info .btn:hover {
+    color: white;
+    background-color: black;
+}
+/*booking page css*/
+
+#book {
+     background: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)),
+     background url("https://i.imgur.com/M9JGebg.jpg") center/cover no-repeat;
+     overflow: hidden;
+     position: relative;
+     margin-bottom: 10px;
+     height: 600px;
+}
+
+#book-content {
+    background-color: lightgray;
+    height: 500px;
+    margin-top: 20px;
+    opacity: 0.5;
+}
+#book-content h4 {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+#book-content .btn {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin: 5px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+}
+
+#book-content .btn:hover {
+    color: white;
+    background-color: black;
+}
+label {
+    padding: 10px;
+    margin-left: 2%;
+    text-decoration: underline;
+    color: black;
+}
+input {
+    width: 80%;
+}
 /*this css code alters the thank page html. The below code was set for screens between 768 and 1025px.*/
 
 }
