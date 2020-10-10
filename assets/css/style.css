@@ -116,6 +116,8 @@ nav {
 .show-links {
   height: 160px;
 }
+
+/*media quries for the navigation bar*/
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
@@ -198,7 +200,6 @@ nav {
     font-size: 40px;
 }
 
-
 #about-text {
     background-color: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)), lightgrey;
 }
@@ -215,13 +216,6 @@ nav {
 #fish img {
     box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
 }
-
-@media screen and (min-width: 1025PX) { #about-text p, #about-two p
-    {
-        font-size: 30px;
-    }
-}
-
 
 
 /**/
@@ -246,7 +240,6 @@ nav {
   text-align: center;
   object-fit: cover;
 }
-
 
 /**/
 #learn {
@@ -316,8 +309,6 @@ nav {
     background-color: black;
 }
 
-
-
 #review-block {
    background-color: white;
    padding: 10px;
@@ -344,6 +335,37 @@ nav {
     font-size: 2vw;
     padding-bottom: 5px;
 }
+
+
+/*This section contains the media queries for the whole of index.html, the media queries allow the content to respond to mobile and desktop devices.
+The css/html of this page is originally set for resultions between 768 and 1024px (tablet)*/
+
+@media screen and (min-width: 1025PX) { #about-text p, #about-two p
+    {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) { 
+#about-text p, #about-two p, #services p, #info p {
+    position: relative;
+    transform: translate(0%, 0%);
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    padding-bottom: 5px;
+}
+#about-text h1, #about-two h1, {
+    font-size: 4vw;
+}
+#carousel-item {
+    height: 120%;
+}
+#carousel-item h2 h4 {
+    font-size: 20px;
+}
+}
+
 
 
 @media screen and (min-width: 1025PX) { #reviews
@@ -402,16 +424,8 @@ footer a i {
     padding-top: 5px;
     margin: 5px;
 }
-.collapsible {
-    height: 
-}
 
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
+
 /*https://www.w3schools.com/howto/howto_css_center_button.asp used to center buttons*/
 
 #courses .btn, #courses-two .btn, #course-info .btn {
@@ -419,6 +433,7 @@ footer a i {
     justify-content: center;
     display: flex;
     position: relative;
+    overflow: hidden;
     margin: 5px;
     color: black;
     background-color: white;
@@ -429,6 +444,38 @@ footer a i {
     color: white;
     background-color: black;
 }
+
+#myDiv {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    border: 1px solid #000;
+}
+
+
+
+
+/*media queries for courses.html*/
+@media (min-width: 320px) and (max-width: 767px) {
+    #course-info h1, #course-info h2 {
+        font-size: 7vw;
+        padding-top: 0;
+        text-align: center;
+        padding: 5px;
+        text-decoration: underline;
+    }
+    #course-info h4, #course-info h3 {
+        font-size: 4vw;
+        padding-top: 10px;
+    }
+    #course-info img {
+        padding-top: 10px;
+    }
+}
+
+
+
 /*booking page css*/
 
 #book {
