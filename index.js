@@ -43,21 +43,6 @@ $("mySlides").fadeOut(1000,linear,function(){
 
 /*This javascript will produce the hidden div containing the form to order the taxidermy courses*/ 
 
-function myFunction() {
- var showWet = document.getElementById("readMe");
- var myBtn = document.getElementById("myBtn");
-
-   if (showWet.style.display === "none") {
-    showWet.style.display = "inline";
-    btnText.innerHTML = "Learn more";
-    moreText.style.display = "none";
-  } else {
-    showWet.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
-
 
 function myFunction() {
   var x = document.getElementById("myDiv");
@@ -66,4 +51,9 @@ function myFunction() {
   } else {
     x.style.display = "block";
   }
+}
+
+function myFunction() {
+   var element = document.getElementById("myDIV");
+   element.classList.toggle("mystyle");
 }
