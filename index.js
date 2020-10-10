@@ -10,12 +10,21 @@ navToggle.addEventListener("click", function () {
     $( "#datepicker" ).datepicker();
   } );
 
-  function validateForm() {
-  var x = document.forms["myForm"].value;
-  if (x == "") {
-    alert("Please enter details");
-    return false;
-  }
+
+
+function required()
+{
+var empt = document.myForm.name.value;
+if (empt === "")
+{
+alert("Please input a Value");
+return false;
+}
+else 
+{
+alert('Code has accepted : you can try another');
+return true; 
+}
 }
 
 
