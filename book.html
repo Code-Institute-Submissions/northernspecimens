@@ -36,6 +36,9 @@
     </div>
 </div>
 </nav>
+<div class="title">
+<h1>Order</h1>
+</div>
 <section id ="book">
 <div class="container-fluid">
 <div class="row">
@@ -51,36 +54,26 @@
     </form>
     <h4>Select your course here:</h4>
     <div class="row">
-    <div class="col-4">
+    <div class="col-md-4">
     <form>
     <label for="beginner">Beginner</label>
-  <input type="radio" id="beginner" name="course" value="beginner"></form>
+  <input type="radio" id="beginner" name="course" value="beginner">
+<label for="intermediate">Intermediate</label>
+<input type="radio" id="intermediate" name="course" value="intermediate" checked="checked">
+<label for="advanced">Advanced</label>
+<input type="radio" id="advanced" name="course" value="advanced">
+<label for="reptiles">Reptiles</label>
+<input type="radio" id="reptile" name="course" value="reptile">
+<label for="birds">Birds</label>
+<input type="radio" id="birds" name="course" value="birds" checked="checked">
+<label for="mammals">Mammals</label>
+<input type="radio" id="mammals" name="course" value="mammals">
+  </form>
   </div>
-   <div class="col-4">
-  <form><label for="intermediate">Intermediate</label>
-  <input type="radio" id="intermediate" name="course" value="intermediate" checked="checked"></form>
-  </div>
-   <div class="col-4">
-  <form><label for="advanced">Advanced</label>
-  <input type="radio" id="advanced" name="course" value="advanced"></form>
-  </div>
-  <div class="col-4">
-  <form><label for="reptiles">Reptiles</label>
-    <input type="radio" id="reptile" name="course" value="reptile"></form>
-  </div>
-  <div class="col-4">
-   <form> <label for="birds">Birds</label>
-  <input type="radio" id="birds" name="course" value="birds" checked="checked"></form>
-  </div>
-  <div class="col-4">
-    <form><label for="mammals">Mammals</label>
-  <input type="radio" id="mammals" name="course" value="mammals"></form>
-  </div>
-  <div class="row">
-  <div class="col-6">
+  <div class="col-md-4">
     <p>Select a date:<input type="text" id="datepicker"></p>
   </div>
-  <div class="col-6">
+  <div class="col-md-4">
       <button id="myButton" type="submit" class="btn btn-white">Book</button>
   </div>
 </div>
@@ -91,12 +84,18 @@
 </div>
 </section>
 <hr>
+<section id="location">
+<div class="container-fluid">
+<div id="location-map">
 <h1>Location</h1>
 <h4>The locations for our courses are shown below</h4>
 <div id="map">
 </div>
+</div>
+</div>
+</section>
 <hr>
-  <footer class="section">
+<footer class="section">
 <p>Copyright &copy; Northern Specimens<br>
 Company 2018. All rights reserved.</p>
 <ul>
