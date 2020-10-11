@@ -65,7 +65,21 @@ $("mySlides").fadeOut(1000,linear,function(){
 
 
 /*this javascript is for the reviews section*/
+function sendMail(contactform) {
+    emailjs.send("gmail, Specimens", {
+        "from_name": contactform.name.value,
+        "from_email": contactform.emailaddress.value,
+        "project_request": contactForm.projectsummary.value
+    })
+    .then(
+        function(response) {
+            console.log("success", response);
+        },
+        function (error) {
+            console.log("Failed resposne", error);
 
+    });
+}
 
 /*This javascript will produce the hidden div containing the form to order the taxidermy courses*/ 
 
