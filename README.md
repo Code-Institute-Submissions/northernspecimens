@@ -5,7 +5,6 @@
 ## **User Experience UX**
 This website is for the buisness Northern Specimens, located in Northern England. They want to acheive and aesthetic and easy-to-use apprach to a complicated and often taboo topic - Taxidermy. 
 https://www.figma.com/file/AnaWjsfcUxc8iUiT7SR5Me/Frontend?node-id=0%3A1
-
 Wireframes^
 
 #User Experience#
