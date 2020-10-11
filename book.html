@@ -8,6 +8,25 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/cerulean/bootstrap.min.css">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
                 <link rel="stylesheet" href="assets/css/style.css">
+                <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_nTGj4oNcyfwf0eCrUS6c8");
+      
+      var templateParams = {
+    name: 'James',
+    notes: 'Check this out!'
+};
+      emailjs.send('gmail', 'Specimens', templateParams)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
+   })();
+</script>
     </head>
     <body>
             <nav>
@@ -78,7 +97,6 @@
   </div>
 </div>
     </div></div>
-</div>
 </div>
 </div>
 </div>
