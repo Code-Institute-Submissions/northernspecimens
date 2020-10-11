@@ -13,9 +13,6 @@ div#map {
 @media (min-width: 320px) and (max-width: 767px) { div#map
     {
         height: 250px;
-        width: 300px;
-        align-content: center;
-        display: flex;
     }
     }
 /*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US*/
@@ -446,7 +443,7 @@ footer a i {
 
 /*https://www.w3schools.com/howto/howto_css_center_button.asp used to center buttons*/
 
-#courses .btn, #courses-two .btn, #course-info .btn {
+#courses .btn, #courses-two .btn, #course-info .btn, #shop .btn {
     text-align: center;
     justify-content: center;
     display: flex;
@@ -458,7 +455,7 @@ footer a i {
     box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
 }
 
-#courses .btn:hover, #courses-two .btn:hover, #course-info .btn:hover {
+#courses .btn:hover, #courses-two .btn:hover, #course-info .btn:hover, #shop .btn:hover {
     color: white;
     background-color: black;
 }
@@ -472,7 +469,17 @@ footer a i {
 }
 
 
-
+#shop .btn{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+}
 
 /*media queries for courses.html*/
 @media (min-width: 320px) and (max-width: 767px) {
@@ -606,26 +613,18 @@ input {
 }
 /*this css code alters the thank page html. The below code was set for screens between 768 and 1025px.*/
 
-}
 .thank-image {
-  background-color: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)), whitesmoke;
-  margin-bottom: 10px;
-  box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
-  overflow: hidden;
-  padding: 10px;
-  position: relative;
-  place-items: center;
+    background: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)),
+    background url("https://i.imgur.com/OqaF2c3.jpg") center/cover no-repeat;
+    box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+    overflow: hidden;
+    padding: 10px;
+    margin-top:20px;
 }
 
 .thank-image-text {
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    margin: 10px;
-    transform: translate(100%, 20%);
-    align-content: center;
-    border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+    margin-top: 50px;
 }
 .thank-image-text h3 {
     padding: 5px;
@@ -638,19 +637,8 @@ input {
     text-align: center;
     color: grey;
 }
-.thank-image-text h6 {
-    padding: 5px;
-    text-align: center;
-    color: grey;
-}
 
-@media (min-width: 320px) and (max-width: 767px) { .thank-bird-text 
-    {
-        height: 200px;
-        width: 150px;
-        transform: translate(20%, 20%);
-        text-decoration: none;    
-    }
+@media (min-width: 320px) and (max-width: 767px) { 
     .thank-bird-text h3 {
         font-size: 20px;
         text-decoration: none;
@@ -670,16 +658,13 @@ input {
   position: relative;
   padding: 10px;
 }
-.mystyle {
-  width: 100%;
-  padding: 25px;
-  background-color: coral;
-  color: white;
-  font-size: 25px;
-  box-sizing: border-box;
-}
-}
+)
 
 /*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing thank you to scaisEdge for helping with Google API*/
 /*https://www.w3schools.com/css/css_image_transparency.asp*/
 /*https://www.w3schools.com/html/html_forms.asp*/
+
+#shop h4 {
+    padding-top: 20px;
+}
+
