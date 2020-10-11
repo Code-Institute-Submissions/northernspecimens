@@ -8,19 +8,6 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/cerulean/bootstrap.min.css">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
                 <link rel="stylesheet" href="assets/css/style.css">
-            <style>
-          html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-          }
-          #map,  {
-            height: 100%;
-            width: 100%;
-            padding: 10px;
-            margin: 10px;
-          }
-        </style>
     </head>
     <body>
             <nav>
@@ -59,35 +46,35 @@
 <form name="Form1" onsubmit="return emptyValidation()" required>
   <label for ="name">Name:</label>
   <input type="text" id="name" name="name" class="form-control" placeholder="Enter Name">
-  </div>
     <label for="email">Email address:</label>
     <input type="email" name="email" class="form-control" placeholder="Enter email" id="email">
     </form>
     <h4>Select your course here:</h4>
     <div class="row">
     <div class="col-4">
+    <form>
     <label for="beginner">Beginner</label>
-  <input type="radio" id="beginner" name="course" value="beginner">
+  <input type="radio" id="beginner" name="course" value="beginner"></form>
   </div>
    <div class="col-4">
-  <label for="intermediate">Intermediate</label>
-  <input type="radio" id="intermediate" name="course" value="intermediate" checked="checked">
+  <form><label for="intermediate">Intermediate</label>
+  <input type="radio" id="intermediate" name="course" value="intermediate" checked="checked"></form>
   </div>
    <div class="col-4">
-  <label for="advanced">Advanced</label>
-  <input type="radio" id="advanced" name="course" value="advanced">
+  <form><label for="advanced">Advanced</label>
+  <input type="radio" id="advanced" name="course" value="advanced"></form>
   </div>
   <div class="col-4">
-  <label for="reptiles">Reptiles</label>
-    <input type="radio" id="reptile" name="course" value="reptile">
+  <form><label for="reptiles">Reptiles</label>
+    <input type="radio" id="reptile" name="course" value="reptile"></form>
   </div>
   <div class="col-4">
-    <label for="birds">Birds</label>
-  <input type="radio" id="birds" name="course" value="birds" checked="checked">
+   <form> <label for="birds">Birds</label>
+  <input type="radio" id="birds" name="course" value="birds" checked="checked"></form>
   </div>
   <div class="col-4">
-    <label for="mammals">Mammals</label>
-  <input type="radio" id="mammals" name="course" value="mammals">
+    <form><label for="mammals">Mammals</label>
+  <input type="radio" id="mammals" name="course" value="mammals"></form>
   </div>
   <div class="row">
   <div class="col-6">
@@ -102,14 +89,11 @@
 </div>
 </div>
 </div>
-</form>
 </section>
 <hr>
 <h1>Location</h1>
 <h4>The locations for our courses are shown below</h4>
 <div id="map">
-</div>
-</div>
 </div>
 <hr>
   <footer class="section">
@@ -123,11 +107,12 @@ Company 2018. All rights reserved.</p>
 </ul>
 </footer>
 <script src="index.js"></script>
-<script src="map.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQN2yB6jsOVU04AVX4DqSxnqFrFDmtlKo&callback=initMap"
         async defer></script>
+           <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.googlemap/1.5.1/jquery.googlemap.min.js"></script>
     </body>
 </html>
