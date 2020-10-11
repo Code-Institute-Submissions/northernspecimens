@@ -14,17 +14,6 @@
 <script type="text/javascript">
    (function(){
       emailjs.init("user_nTGj4oNcyfwf0eCrUS6c8");
-      
-      var templateParams = {
-    name: 'James',
-    notes: 'Check this out!'
-};
-      emailjs.send('gmail', 'Specimens', templateParams)
-    .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
-    }, function(error) {
-       console.log('FAILED...', error);
-    });
    })();
 </script>
     </head>
@@ -65,7 +54,7 @@
 <div id ="book-content">
 <h1>Fill in the form to book your course place</h1>
 <div id="form-section">
-<form name="Form1" onsubmit="return emptyValidation()" required>
+<form name="Form1" onsubmit="return sendMail(this);" method="POST">
   <label for ="name">Name:</label>
   <input type="text" id="name" name="name" class="form-control" placeholder="Enter Name">
     <label for="email">Email address:</label>
@@ -97,6 +86,7 @@
   </div>
 </div>
     </div></div>
+</div>
 </div>
 </div>
 </div>
