@@ -6,28 +6,38 @@ navToggle.addEventListener("click", function () {
   links.classList.toggle("show-links");
 });
 
- $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
+/*javascript for the google maps API*/ 
 
 
+var map
+function initMap() {
+     map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 8,
+    center: { lat: 53.8060835, lng: -1.6057715 },
+  });
 
-function required()
-{
-var empt = document.myForm.name.value;
-if (empt === "")
-{
-alert("Please input a Value");
-return false;
+  var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+  var markers = locations.map((location, i) => {
+    return new google.maps.Marker({
+      position: location,
+      label: labels[i % labels.length],
+    });
+  });
+
+  new MarkerClusterer(map, markers, {
+    imagePath:
+      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+  });
 }
-else 
-{
-alert('Code has accepted : you can try another');
-return true; 
-}
-}
-
-
+          var locations = [
+              {lat: 53.9046171, lng: -1.7096875},
+              {lat: 54.0724437, lng: -2.0037134},
+              {lat: 53.9586419, lng: -1.1156109},
+              {lat: 53.9940619, lng: -1.563934},
+              {lat: 53.9552604, lng: -2.0395033},
+              {lat: 53.9201868, lng: -1.8409911}
+              ];
 
 //this js code was taken from s3schools to create an automatic slideshow on the home page under "Our Services" https://www.w3schools.com/w3css/w3css_slideshow.asp//
 var slideIndex = 0;
@@ -46,6 +56,13 @@ function carousel() {
 }
 $("mySlides").fadeOut(1000,linear,function(){
 });
+
+
+
+ $( function() {
+    $( "#datepicker" ).datepicker();
+  });
+
 
 /*this javascript is for the reviews section*/
 
