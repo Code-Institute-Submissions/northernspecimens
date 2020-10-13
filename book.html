@@ -61,28 +61,36 @@
     <input type="email" name="email" class="form-control" placeholder="Enter email" id="email">
     </form>
     <h4>Select your course here:</h4>
-    <div class="row">
-    <div class="col-md-4">
-    <form>
-    <label for="beginner">Beginner</label>
-  <input type="radio" id="beginner" name="course" value="beginner">
-<label for="intermediate">Intermediate</label>
-<input type="radio" id="intermediate" name="course" value="intermediate" checked="checked">
-<label for="advanced">Advanced</label>
-<input type="radio" id="advanced" name="course" value="advanced">
-<label for="reptiles">Reptiles</label>
-<input type="radio" id="reptile" name="course" value="reptile">
-<label for="birds">Birds</label>
-<input type="radio" id="birds" name="course" value="birds" checked="checked">
-<label for="mammals">Mammals</label>
-<input type="radio" id="mammals" name="course" value="mammals">
-  </form>
+  <div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Beginner</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Intermediate</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+  <label class="form-check-label" for="inlineCheckbox3">Advanced</label>
+</div>
+  <div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Reptiles</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Birds</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+  <label class="form-check-label" for="inlineCheckbox3">Mammals</label>
+</div>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-12">
     <p>Select a date:<input type="text" id="datepicker"></p>
   </div>
-  <div class="col-md-4">
-      <button id="myButton" type="submit" class="btn btn-white">Book</button>
+  <div class="col-md-12">
+      <button id="myButton" type="submit" class="scroll-button btn btn-white">Book</button>
   </div>
 </div>
     </div></div>
@@ -103,10 +111,10 @@
 </div>
 </section>
 <hr>
-<footer class="section">
+<footer>
 <p>Copyright &copy; Northern Specimens<br>
 Company 2018. All rights reserved.</p>
-<ul>
+<ul class="justify-content-center col-12">
 <li><a href="https://www.instagram.com/northernspecimens/"><i class="fab fa-instagram"></i></a></li>
 <li><a href="https://www.instagram.com/northernspecimens/"><i class="fas fa-envelope-square"></i></a></li>
 <li><a href="https://www.instagram.com/northernspecimens/"><i class="fab fa-snapchat"></i></a></li>
