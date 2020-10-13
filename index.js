@@ -39,6 +39,19 @@ function initMap() {
               {lat: 53.9201868, lng: -1.8409911}
               ];
 
+/*this javascript is for the courses toggle buttons on the courses.html page https://api.jqueryui.com/toggle/ was used and tested to create this code*/
+
+$( "button" ).click(function() {
+  $( "#hidden p" ).toggle( "blind", 1000 );
+});
+
+$( "button" ).click(function() {
+  $( "#hidden-one p" ).toggle( "blind", 1000 );
+});
+
+$( "button" ).click(function() {
+  $( "#hidden-two p" ).toggle( "blind", 1000 );
+});
 //this js code was taken from s3schools to create an automatic slideshow on the home page under "Our Services" https://www.w3schools.com/w3css/w3css_slideshow.asp//
 var slideIndex = 0;
 carousel();
@@ -56,6 +69,9 @@ function carousel() {
 }
 $("mySlides").fadeOut(1000,linear,function(){
 });
+
+/*this is javascript for the toggle buttons on the courses page*/
+
 
 /*Javascript for the date picker on the book.html page*/
 
