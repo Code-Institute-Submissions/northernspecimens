@@ -84,6 +84,7 @@ hr {
 nav {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+  margin-bottom: 10px;
 }
 
 .nav-header {
@@ -391,20 +392,18 @@ The css/html of this page is originally set for resultions between 768 and 1024p
 
 /*footer code*/
 footer {
-height: 100px;
+height: 80px;
 position: relative;
 bottom: 0;
-padding: 5px;
 }
-
 
 footer p {
     padding: 5px;
-    margin-top: 10px;
     font-size: 3vw;
 }
 footer ul {
     text-align: center;
+    align-content: center;
 }
 footer li {
     line-height: 20px;
@@ -415,6 +414,9 @@ footer a i {
     color: lightgrey;
     font-size: 5vw;
     margin-left: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 /**/
@@ -425,10 +427,9 @@ footer a i {
 
 /*css for courses page*/
 #course-info {
-    margin: 50px;
     overflow: hidden;
-    padding: 5px;
 }
+
 #course-info h4 {
     text-align: center;
     color:black;
@@ -443,7 +444,7 @@ footer a i {
 
 /*https://www.w3schools.com/howto/howto_css_center_button.asp used to center buttons*/
 
-#courses .btn, #courses-two .btn, #course-info .btn, #shop .btn {
+#courses .btn, #courses-two .btn, #course-info .btn, #shop .btn, #hidden .btn, #hidden-one .btn, #hidden-two .btn {
     text-align: center;
     justify-content: center;
     display: flex;
@@ -455,31 +456,20 @@ footer a i {
     box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
 }
 
-#courses .btn:hover, #courses-two .btn:hover, #course-info .btn:hover, #shop .btn:hover {
+#courses .btn:hover, #courses-two .btn:hover, #course-info .btn:hover, #shop .btn:hover, #hidden .btn:hover, #hidden-one .btn:hover, #hidden-two .btn:hover {
     color: white;
     background-color: black;
 }
 
-#myDiv {
+#hidden p, #hidden-one p, #hidden-two p {
     display: none;
-    width: 100px;
-    height: 100px;
-    background: #ccc;
-    border: 1px solid #000;
-}
-
-
-#shop .btn{
     text-align: center;
-    justify-content: center;
-    display: flex;
-    position: relative;
+    padding: 5px;
+    margin-bottom: 10px;
     overflow: hidden;
-    margin: 5px;
-    color: black;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
 }
+
+
 
 /*media queries for courses.html*/
 @media (min-width: 320px) and (max-width: 767px) {
@@ -509,12 +499,10 @@ footer a i {
      overflow: hidden;
      position: relative;
      margin-bottom: 10px;
-     height: 700px;
 }
 
 #book-content {
     background-color: lightgray;
-    height: 600px;
     margin-top: 20px;
     opacity: 0.5;
 }
@@ -524,7 +512,11 @@ footer a i {
     text-decoration: underline;
     padding: 10px;
 }
-
+#Form1 {
+    opacity: 1;
+    position: relative;
+    align-content: center;
+}
 #book-content .btn {
     text-align: center;
     justify-content: center;
@@ -541,15 +533,10 @@ footer a i {
     background-color: black;
 }
 
-
 label {
-    text-decoration: underline;
     color: black;
 }
-input {
-    width: 80%;
-}
-
+/*https://getbootstrap.com/docs/4.0/components/forms/*/
 #datepicker {
     margin: 10px;
 }
@@ -564,32 +551,33 @@ input {
 }
 
 /*find us css*/
-#find {
-
-}
 
 #find-us {
     background: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)),
     background url("https://i.imgur.com/M9JGebg.jpg") center/cover no-repeat;
-    height: 500px;
     padding: 10px;
-    margin: 10px;
+    overflow: hidden;
 }
 #find-us h1 {
-    font-size: 5vw;
+    font-size: 30px;
 }
 
 #find-us h4 {
     color: black;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
 }
-
+#contact ul li{
+    background-color: white;
+    opacity: 0.8;
+    text-align: center;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+}
 #directions {
-        height: 500px;
-        margin: 10px;
-        padding: 10px;
+        padding: 5px;
         overflow: hidden;
     }
 
