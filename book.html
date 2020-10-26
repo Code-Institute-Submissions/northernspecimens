@@ -8,7 +8,7 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/cerulean/bootstrap.min.css">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
                 <link rel="stylesheet" href="assets/css/style.css">
-                <script type="text/javascript"
+<script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
 </script>
 <script type="text/javascript">
@@ -54,12 +54,11 @@
 <div id ="book-content">
 <h1>Fill in the form to book your course place</h1>
 <div id="form-section">
-<form name="Form1" onsubmit="return sendMail(this);" method="POST">
-  <label for ="name">Name:</label>
-  <input type="text" id="name" name="name" class="form-control" placeholder="Enter Name">
-    <label for="email">Email address:</label>
-    <input type="email" name="email" class="form-control" placeholder="Enter email" id="email">
-    </form>
+<form onsubmit="return sendMail(this);">
+    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Purchase/Course Information" required></textarea>
+    <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
     <h4>Select your course here:</h4>
   <div class="form-check form-check-inline">
   <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -91,9 +90,11 @@
   </div>
   <div class="col-md-12">
       <button id="myButton" type="submit" class="scroll-button btn btn-white">Book</button>
+      </form>
   </div>
 </div>
-    </div></div>
+    </div>
+    </div>
 </div>
 </div>
 </div>
@@ -104,7 +105,14 @@
 <div class="container-fluid">
 <div id="location-map">
 <h1>Location</h1>
-<h4>The locations for our courses are shown below</h4>
+<h4>The locations for our courses are marked below.<br>
+Please contact us for precise locations.</h4>
+<p>Beginner - A.
+Intermediate - B.
+Advanced - C.
+Reptiles - D.
+Birds - E.
+Mammals - F.</p>
 <div id="map">
 </div>
 </div>
@@ -112,14 +120,16 @@
 </section>
 <hr>
 <footer>
-<p>Copyright &copy; Northern Specimens<br>
-Company 2018. All rights reserved.</p>
-<ul class="justify-content-center col-12">
+<div class="container-fluid">
+<ul class="media justify-content-center col-12">
 <li><a href="https://www.instagram.com/northernspecimens/"><i class="fab fa-instagram"></i></a></li>
 <li><a href="https://www.instagram.com/northernspecimens/"><i class="fas fa-envelope-square"></i></a></li>
 <li><a href="https://www.instagram.com/northernspecimens/"><i class="fab fa-snapchat"></i></a></li>
 <li><a href="https://www.instagram.com/northernspecimens/"><i class="fas fa-home"></i></a></li>
 </ul>
+<p>Copyright &copy; Northern Specimens.<br>
+Company 2018. All rights reserved.</p>
+</div>
 </footer>
 <script src="index.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
