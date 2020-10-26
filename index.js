@@ -9,7 +9,7 @@ navToggle.addEventListener("click", function () {
 /*javascript for the google maps API thanks to Code Institute, /*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing thank you to scaisEdge for helping with Google API and /*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US and https://jsfiddle.net/api/post/library/pure/*/
 
 
-var map
+var map;
 function initMap() {
      map = new google.maps.Map(document.getElementById("map"), {
     zoom: 8,
@@ -17,14 +17,17 @@ function initMap() {
   });
 
   var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
+  // Add some markers to the map.
+  // Note: The code uses the JavaScript Array.prototype.map() method to
+  // create an array of markers based on a given "locations" array.
+  // The map() method here has nothing to do with the Google Maps API.
   var markers = locations.map((location, i) => {
     return new google.maps.Marker({
       position: location,
       label: labels[i % labels.length],
     });
   });
-
+  // Add a marker clusterer to manage the markers.
   new MarkerClusterer(map, markers, {
     imagePath:
       "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
@@ -81,35 +84,24 @@ $("mySlides").fadeOut(1000,linear,function(){
 
 
 /*this javascript is for the reviews section*/
-function sendMail(contactform) {
-    emailjs.send("gmail, Specimens", {
-        "from_name": contactform.name.value,
-        "from_email": contactform.emailaddress.value,
+
+function sendMail(contactForm) {
+    emailjs.send("gmail", "specimens", {
+        "from_name": contactForm.name.value,
+        "from_email": contactForm.emailaddress.value,
         "project_request": contactForm.projectsummary.value
     })
     .then(
         function(response) {
-            console.log("success", response);
+            console.log("SUCCESS", response);
+            window.location.href = 'thank.html';
         },
-        function (error) {
-            console.log("Failed resposne", error);
-
-    });
-}
-
+        function(error) {
+            console.log("FAILED", error);
+        }
+);
+    return false; 
+    } 
+    
+    // To block from loading a new page
 /*This javascript will produce the hidden div containing the form to order the taxidermy courses*/ 
-
-
-function myFunction() {
-  var x = document.getElementById("myDiv");
-  if (x.style.display === "none") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
-function myFunction() {
-   var element = document.getElementById("myDIV");
-   element.classList.toggle("mystyle");
-}
