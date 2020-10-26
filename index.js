@@ -103,5 +103,5 @@ function sendMail(contactForm) {
     return false; 
     } 
     
-    // To block from loading a new page
+   /*Thank you to this coder who introduced me to redirecting the form https://stackoverflow.com/questions/44628146/how-can-i-make-php-redirect-after-email-message-was-sent/44628879*/
 /*This javascript will produce the hidden div containing the form to order the taxidermy courses*/ 
