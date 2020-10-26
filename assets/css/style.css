@@ -382,42 +382,42 @@ The css/html of this page is originally set for resultions between 768 and 1024p
 }
 }
 
-
-
 @media screen and (min-width: 1025PX) { #reviews
     {
         height: 350px;
     }
 }
 
-/*footer code*/
+/*footer code i took alot of this section from my previous project as it seemed to suit both sites well. This was inspired by the code institute project*/
+
 footer {
-height: 80px;
 position: relative;
 bottom: 0;
 }
-
 footer p {
-    padding: 5px;
-    font-size: 3vw;
+    font-size: 4vw;
 }
-footer ul {
-    text-align: center;
-    align-content: center;
+.media {
+text-align: center;
 }
-footer li {
-    line-height: 20px;
-    list-style-type: none;
-    display: inline-block;
+
+.media ul {
+display: inline-block;
 }
-footer a i {
+.media li {
+display: inline-block;
+}
+.media i {
     color: lightgrey;
-    font-size: 5vw;
-    margin-left: 10px;
     text-align: center;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 150%;
+    padding: 5px;
 }
+
 
 /**/
 
@@ -535,12 +535,17 @@ footer a i {
 
 label {
     color: black;
+    font-size: 20px;
 }
 /*https://getbootstrap.com/docs/4.0/components/forms/*/
 #datepicker {
     margin: 10px;
 }
 
+
+#location-map p{
+    font-size: 15px;
+}
 @media (min-width: 320px) and (max-width: 767px) { label {
         font-size: 2vw;
 }
@@ -603,47 +608,44 @@ label {
     background: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)),
     background url("https://i.imgur.com/OqaF2c3.jpg") center/cover no-repeat;
     box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
-    overflow: hidden;
     padding: 10px;
-    margin-top:20px;
+    margin-top: 20px;
+    min-height: 50vh;
 }
 
-.thank-image-text {
-    box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
-    margin-top: 50px;
-}
 .thank-image-text h3 {
     padding: 5px;
-    text-decoration: underline;
     text-align: center;
-    color: grey;
+    color: black;
 }
 .thank-image-text h4 {
     padding: 5px;
     text-align: center;
-    color: grey;
+    color: black;
 }
 
-@media (min-width: 320px) and (max-width: 767px) { 
-    .thank-bird-text h3 {
+@media screen and (max-width: 480px) { 
+    .thank-image-text h3 {
         font-size: 20px;
         text-decoration: none;
-        padding-top: 10px;
     }
-    .thank-bird-text h4 {
+    .thank-image-text h4 {
         font-size: 15px;
     }
-    }
-
-@media screen and (min-width: 1025PX) { .thank-image {
-      min-height: 50vh;
-  background: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)); 
-  margin-bottom: 10px;
-  box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
-  overflow: hidden;
-  position: relative;
-  padding: 10px;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+        min-height: 250px;
+    }
+}
+
+
+@media screen and (min-width: 1024PX) { .thank-image {
+    min-height: 700px;
+    margin-bottom: 10px;
+    padding: 10px;
+    }
 )
 
 /*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing thank you to scaisEdge for helping with Google API*/
