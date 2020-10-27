@@ -444,7 +444,7 @@ display: inline-block;
 
 /*https://www.w3schools.com/howto/howto_css_center_button.asp used to center buttons*/
 
-#courses .btn, #courses-two .btn, #course-info .btn, #shop .btn, #hidden .btn, #hidden-one .btn, #hidden-two .btn {
+#courses .btn, #courses-two .btn, #course-info .btn, #shop .btn {
     text-align: center;
     justify-content: center;
     display: flex;
@@ -489,8 +489,11 @@ display: inline-block;
     }
 }
 
-
-
+@media screen and (min-width: 1024px) {
+    #course-info hr, #courses hr, #courses-two hr {
+        display: none;
+    }
+}
 /*booking page css*/
 
 #book {
@@ -504,7 +507,7 @@ display: inline-block;
 #book-content {
     background-color: lightgray;
     margin-top: 20px;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 #book-content h4 {
     color: black;
@@ -612,7 +615,14 @@ label {
     margin-top: 20px;
     min-height: 50vh;
 }
-
+.thank-image-text {
+    position: absolute;
+    padding: 10px;
+    top: 40%;
+    left: 50%;
+/*this code was taken from https://stackoverflow.com/questions/6256043/css-position-loading-indicator-in-the-center-of-the-screen user Salim*/
+    transform: translate(-50%, -50%);
+}
 .thank-image-text h3 {
     padding: 5px;
     text-align: center;
@@ -624,6 +634,20 @@ label {
     color: black;
 }
 
+.thank-image .btn {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 5px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+}
+.thank-image .btn:hover {
+    color: white;
+    background-color: black;
+}
 @media screen and (max-width: 480px) { 
     .thank-image-text h3 {
         font-size: 20px;
@@ -634,9 +658,9 @@ label {
     }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-
-        min-height: 250px;
+@media (min-width: 320px) and (max-width: 767px) { .thank-image
+{
+        max-height: 250px;
     }
 }
 
