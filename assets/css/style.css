@@ -490,7 +490,7 @@ display: inline-block;
 }
 
 @media screen and (min-width: 1024px) {
-    #course-info hr, #courses hr, #courses-two hr {
+     {
         display: none;
     }
 }
@@ -564,7 +564,6 @@ label {
     background: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)),
     background url("https://i.imgur.com/M9JGebg.jpg") center/cover no-repeat;
     padding: 10px;
-    overflow: hidden;
 }
 #find-us h1 {
     font-size: 30px;
@@ -576,14 +575,14 @@ label {
     text-align: center;
     font-size: 15px;
 }
+
 #contact ul li{
     background-color: white;
     opacity: 0.8;
     text-align: center;
-    list-style-type: none;
-    text-align: center;
     padding: 10px;
 }
+
 #directions {
         padding: 5px;
         overflow: hidden;
@@ -603,6 +602,11 @@ label {
     font-size: 3vw;
     text-align: center;
     list-style-type: none;
+}
+#contact ul li{
+    text-align: center;
+    align-content: center;
+    min-width: 250px;
 }
 }
 /*this css code alters the thank page html. The below code was set for screens between 768 and 1025px.*/
