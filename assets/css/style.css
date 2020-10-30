@@ -15,6 +15,7 @@ div#map {
         height: 250px;
     }
     }
+
 /*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US*/
 html, body {
             height: 100%;
@@ -60,6 +61,11 @@ p {
     padding:10px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) { h1 {
+        padding: 10px;
+}
+}
+
 section {
     border-bottom: 1px 
 }
@@ -70,6 +76,8 @@ hr {
     display: inline-block;
     margin-left: 10%;
 }
+
+
 
 .logo {
   position: relative;
@@ -170,6 +178,7 @@ nav {
     background-color:white;
   }
 }
+
 /*Home page css code. References: */
 #home-page {
   min-height: 100vh;
@@ -232,29 +241,39 @@ nav {
 #fish img {
     box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
 }
-
+@media (min-width: 320px) and (max-width: 767px) { #fish img {
+       margin-bottom: 10px;
+}
+}
+@media screen and (min-width: 1024PX) { #about-text p, #about-two p
+    {
+        font-size: 30px;
+    }
+}
 
 /**/
 .slide-container {
   width: auto;
   margin: 0 auto;
-  height: 400px;
   position: relative;
   border-radius: 8%;
-  padding-bottom: 10px;
-  overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
 }
 .mySlides {
   position: relative;
   border-radius: 8%;
   width: 100%;
-  height: 400px;
   display: grid;
   place-items: center;
   transition: all 0.25s ease-in-out;
   text-align: center;
   object-fit: cover;
+}
+
+@media (min-width: 320px) and (max-width: 767px) { .slide-container .mySlides {
+        height: 400px;
+        margin-bottom: 10px;
+}
 }
 
 /**/
@@ -299,6 +318,49 @@ nav {
     background-color: black;
 }
 
+@media screen and (min-width: 1024px) { #skull img
+    {
+        margin-left: 5%;
+    }
+        #info {
+        margin-right: 5%;
+        margin-top: 40px;
+        }
+        #info h2 {
+            font-size:4vw;
+            margin-top: 10px;
+        }
+        #info li {
+            font-size:4vw;
+        }
+        #info .btn {
+             transform: translate(0%, 30%);
+        }
+        #learn {
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+    }
+@media (min-width: 320px) and (max-width: 767px) { 
+#about-text p, #about-two p, #services p, #info p {
+    position: relative;
+    transform: translate(0%, 0%);
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    padding-bottom: 5px;
+}
+#about-text h1, #about-two h1, {
+    font-size: 4vw;
+}
+#carousel-item {
+    height: 120%;
+}
+#carousel-item h2 h4 {
+    font-size: 20px;
+}
+}
 /*css for review section on home page*/
 
 #reviews {
@@ -337,6 +399,11 @@ nav {
     border-radius: 50%;
     padding: 5px;
     }
+
+.carousel-indicators {
+    display: none;
+}
+
 .carousel-item {
     overflow: hidden;
 }
@@ -352,42 +419,39 @@ nav {
     padding-bottom: 5px;
 }
 
-
-/*This section contains the media queries for the whole of index.html, the media queries allow the content to respond to mobile and desktop devices.
-The css/html of this page is originally set for resultions between 768 and 1024px (tablet)*/
-
-@media screen and (min-width: 1025PX) { #about-text p, #about-two p
-    {
-        font-size: 30px;
+@media (min-width: 320px) and (max-width: 767px) { .carousel-inner h2{
+        font-size: 20px;
+        color: black;
+        font-family: 'Cinzel', serif;
+}
+    .carousel-inner h4 {
+        font-size: 15px;
+        color: black;
+        font-family: 'Montserrat', sans-serif; 
     }
 }
 
-@media (min-width: 320px) and (max-width: 767px) { 
-#about-text p, #about-two p, #services p, #info p {
-    position: relative;
-    transform: translate(0%, 0%);
-    font-size: 15px;
-    text-align: center;
-    color: black;
-    padding-bottom: 5px;
+@media screen and (min-width: 1024px) { #reviews {
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+        height: 450px;
 }
-#about-text h1, #about-two h1, {
-    font-size: 4vw;
+        #review-block {
+            margin-left: 5%;
+            margin-right: 5%;
+            height: 250px;
+        }
+        #reviews .btn {
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .myReview {
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+        }
 }
-#carousel-item {
-    height: 120%;
-}
-#carousel-item h2 h4 {
-    font-size: 20px;
-}
-}
-
-@media screen and (min-width: 1025PX) { #reviews
-    {
-        height: 350px;
-    }
-}
-
 /*footer code i took alot of this section from my previous project as it seemed to suit both sites well. This was inspired by the code institute project*/
 
 footer {
@@ -418,7 +482,13 @@ display: inline-block;
     padding: 5px;
 }
 
-
+@media screen and (min-width: 1024px) { footer p {
+    font-size: 2vw;
+}
+    .media i {
+        font-size: 200%;
+    }
+}
 /**/
 
 
