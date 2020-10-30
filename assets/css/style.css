@@ -117,7 +117,7 @@ nav {
 
 .links a {
   color: grey;
-  font-size: 1rem;
+  font-size: 15px;
   text-transform: capitalize;
   letter-spacing: 4px;
   display: block;
@@ -127,15 +127,15 @@ nav {
 .links a:hover {
   background-color: rgba(199, 191, 191, 0.322);
   color: black;
-  padding-left: 10px;
   margin-bottom:1px;
   box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+
 }
 .links {
   height: 0;
-  overflow: hidden;
   transition: var(--transition);
   list-style-type: none;
+  overflow: hidden;
 }
 .show-links {
   height: 160px;
@@ -750,7 +750,37 @@ label {
 /*https://www.w3schools.com/css/css_image_transparency.asp*/
 /*https://www.w3schools.com/html/html_forms.asp*/
 
-#shop h4 {
-    padding-top: 20px;
+#shop-front h1 {
+    margin: 10px;
+    font-size: 3vw;
+    text-align: center;
+    padding: 5px;
 }
 
+#shop-front .btn: {
+    margin-bottom: 20px;
+}
+
+#shop-front img {
+    line-height: 20px;
+}
+
+@media screen and (min-width: 1024PX) { #shop-front img {
+        height: 300px;
+        width: 350px;
+        align-content: center;
+        transform: translate(30%, 0%);
+}
+#shop-front .btn {
+    width: 350px;
+    transform: translate(30%, 0%);
+    margin-bottom: 15px;
+}
+}
+
+@media (min-width: 320px) and (max-width: 767px) { #shop-front img {
+            height: 250px;
+            align-content: center;
+            
+}
+}
