@@ -743,32 +743,29 @@ label {
     box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
     padding: 10px;
     margin-top: 20px;
-    min-height: 50vh;
+    height: 400px;
 }
 .thank-image-text {
-    position: absolute;
     padding: 10px;
-    top: 40%;
-    left: 50%;
-/*this code was taken from https://stackoverflow.com/questions/6256043/css-position-loading-indicator-in-the-center-of-the-screen user Salim*/
-    transform: translate(-50%, -50%);
 }
-.thank-image-text h3 {
+.thank-image-text h1 {
+    padding: 5px;
+    font-size: 5vw;
+    text-align: center;
+    color: black;
+      transform: translate(-30%, 0%);
+}
+.thank-image-text h2 {
     padding: 5px;
     text-align: center;
     color: black;
-}
-.thank-image-text h4 {
-    padding: 5px;
-    text-align: center;
-    color: black;
+        transform: translate(-25%, 0%);
+        font-size: 3vw;
 }
 
 .thank-image .btn {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+     font-family: 'Cinzel', serif;
+    transform: translate(200%, 80%);
     margin: 5px;
     color: black;
     background-color: white;
@@ -778,27 +775,34 @@ label {
     color: white;
     background-color: black;
 }
-@media screen and (max-width: 480px) { 
-    .thank-image-text h3 {
-        font-size: 20px;
-        text-decoration: none;
+
+@media (min-width: 320px) and (max-width: 767px) { .thank-image{
+    max-height: 250px;
+}
+    .thank-image-text h1 {
+        font-size: 5vw;
+            transform: translate(-30%, 0%);
     }
-    .thank-image-text h4 {
-        font-size: 15px;
+    .thank-image-text h2 {
+        font-size: 3vw;
+          transform: translate(-25%, -50%);
+    }
+    .thank-image .btn {
+             transform: translate(150%, -10%);
     }
 }
 
-@media (min-width: 320px) and (max-width: 767px) { .thank-image
-{
-        max-height: 250px;
-    }
-}
-
-
-@media screen and (min-width: 1024PX) { .thank-image {
-    min-height: 700px;
+@media screen and (min-width: 1024px) { .thank-image {
+    min-height: 600px;
     margin-bottom: 10px;
     padding: 10px;
+    }
+    .thank-image-text {
+        margin-top: 50px;
+    }
+    .thank-image .btn {
+       font-size: 40px;
+       transform: translate(100%, 70%);
     }
 )
 
