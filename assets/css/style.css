@@ -515,7 +515,7 @@ position: relative;
 bottom: 0;
 }
 footer p {
-    font-size: 4vw;
+    font-size: 2vw;
 }
 .media {
 text-align: center;
@@ -759,7 +759,7 @@ label {
     padding: 5px;
     text-align: center;
     color: black;
-        transform: translate(-25%, 0%);
+        transform: translate(-28%, 0%);
         font-size: 3vw;
 }
 
@@ -804,7 +804,16 @@ label {
        font-size: 40px;
        transform: translate(100%, 70%);
     }
-)
+}
+@media screen and (min-width: 1150px) { .thank-image .btn {
+        margin-left: 30%;
+         transform: translate(200%, 70%);
+}
+.thank-image-text h2 {
+    font-size:2vw;
+}
+}
+
 
 /*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing thank you to scaisEdge for helping with Google API*/
 /*https://www.w3schools.com/css/css_image_transparency.asp*/
