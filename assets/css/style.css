@@ -805,9 +805,10 @@ label {
        transform: translate(100%, 70%);
     }
 }
-@media screen and (min-width: 1150px) { .thank-image .btn {
+@media screen and (min-width: 1550px) { .thank-image .btn {
         margin-left: 30%;
-         transform: translate(200%, 70%);
+         transform: translate(100%, 70%);
+         font-size: 60px;
 }
 .thank-image-text h2 {
     font-size:2vw;
