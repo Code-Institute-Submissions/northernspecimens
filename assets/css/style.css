@@ -234,12 +234,18 @@ nav {
 #about-two h2 {
     padding-top: 10px;
 }
+#about-text p, #about-two p {
+    padding: 10px;
+}
 #services {
     height: auto;
     overflow:hidden;
 }
 #fish img {
     box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+}
+#hidden-image {
+    margin-bottom: 10px;
 }
 @media (min-width: 320px) and (max-width: 767px) { #fish img {
        margin-bottom: 10px;
@@ -249,6 +255,15 @@ nav {
     {
         font-size: 30px;
     }
+}
+@media (min-width: 678px) and (max-width: 1024px) { #about-text p, #about-two p 
+{
+        font-size: 20px;
+    }
+}
+@media (min-width: 0px) and (max-width: 1024px) { #hidden-image img {
+    display: none;
+}
 }
 
 /**/
@@ -310,6 +325,8 @@ nav {
 
 #skull img {
     box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+    align-content: center;
+    position: relative;
 }
 #info .btn {
     text-align: center;
@@ -328,11 +345,14 @@ nav {
 
 @media screen and (min-width: 1024px) { #skull img
     {
-        margin-left: 25%;
-    }
+        margin-right: 15%;
+        transform: translate(12%, 0%);
+        }
         #info {
-        margin-right: 25%;
+        margin-left: 20%;
         margin-top: 40px;
+        transform: translate(-10%, 0%);
+
         }
         #info h2 {
             font-size:3vw;
@@ -348,8 +368,25 @@ nav {
             overflow: hidden;
             margin-bottom: 10px;
         }
-
     }
+@media screen and (min-width: 1150px) {#info {
+                     transform: translate(-30%, 0%);
+}
+#skull img {
+        transform: translate(30%, 0%);
+}
+}
+
+
+@media (min-width: 678px) and (max-width: 1024px) { #skull {
+        width: 90%;
+        align-content: center;
+        justify-content: center;
+        transform: translate(5%, 0%);
+}
+}
+
+
 @media (min-width: 320px) and (max-width: 767px) { 
 #about-text p, #about-two p, #services p, #info p {
     position: relative;
