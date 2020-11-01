@@ -252,6 +252,8 @@ nav {
 }
 
 /**/
+
+
 .slide-container {
   width: auto;
   margin: 0 auto;
@@ -273,6 +275,12 @@ nav {
 @media (min-width: 320px) and (max-width: 767px) { .slide-container .mySlides {
         height: 400px;
         margin-bottom: 10px;
+}
+}
+
+@media screen and (min-width: 1024px) { .mySlides {
+        max-height: 600px;
+        border-radius: 0%;
 }
 }
 
@@ -320,14 +328,14 @@ nav {
 
 @media screen and (min-width: 1024px) { #skull img
     {
-        margin-left: 5%;
+        margin-left: 25%;
     }
         #info {
-        margin-right: 5%;
+        margin-right: 25%;
         margin-top: 40px;
         }
         #info h2 {
-            font-size:4vw;
+            font-size:3vw;
             margin-top: 10px;
         }
         #info li {
@@ -411,23 +419,23 @@ nav {
         padding: 5px;
         text-decoration: underline;
         font-size: 3vw;
+        font-family: 'Cinzel', serif;
 }
 
 .carousel-item h4 {
     color: black;
     font-size: 2vw;
     padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif; 
 }
 
 @media (min-width: 320px) and (max-width: 767px) { .carousel-inner h2{
         font-size: 20px;
         color: black;
-        font-family: 'Cinzel', serif;
 }
     .carousel-inner h4 {
         font-size: 15px;
         color: black;
-        font-family: 'Montserrat', sans-serif; 
     }
 }
 
@@ -451,6 +459,17 @@ nav {
             width: 100px;
             padding: 10px;
         }
+        .carousel-inner h2{
+        font-size: 40px;
+        color: black;
+}
+    .carousel-inner h4 {
+        font-size: 20px;
+        color: black;
+    }
+    #reviews h1 {
+        transform: translate(-1%, 0%);
+    }
 }
 /*footer code i took alot of this section from my previous project as it seemed to suit both sites well. This was inspired by the code institute project*/
 
