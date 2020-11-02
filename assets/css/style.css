@@ -67,6 +67,23 @@ p {
 	padding: 10px;
 }
 
+.btn {
+    text-align: center;
+	justify-content: center;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	margin: 5px;
+	color: black;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
+}
+.btn:hover {
+	color: white;
+	background-color: black;
+}
+
+
 @media (min-width: 320px) and (max-width: 767px) {
 	h1 {
 		padding: 10px;
@@ -597,52 +614,18 @@ footer p {
 
 /*css for courses page*/
 
-#course-info {
-	overflow: hidden;
+#course-info, #courses {
+	width: 90%;
+    margin: 0 auto;
 }
 
-#course-info h4 {
-	text-align: center;
-	color: black;
-	overflow: hidden;
+#course-info h1, #courses h1 {
+	font-size: 2vw;
+    text-align: center;
+    margin-top: 10px;
 }
-
-#courses h3,
-#course-info h3,
-#courses-two h3 {
-	color: black;
-	padding-top: 5px;
-	margin: 5px;
-}
-
 
 /*https://www.w3schools.com/howto/howto_css_center_button.asp used to center buttons*/
-
-#courses .btn,
-#courses-two .btn,
-#course-info .btn,
-#shop .btn {
-	text-align: center;
-	justify-content: center;
-	display: flex;
-	position: relative;
-	overflow: hidden;
-	margin: 5px;
-	color: black;
-	background-color: white;
-	box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
-}
-
-#courses .btn:hover,
-#courses-two .btn:hover,
-#course-info .btn:hover,
-#shop .btn:hover,
-#hidden .btn:hover,
-#hidden-one .btn:hover,
-#hidden-two .btn:hover {
-	color: white;
-	background-color: black;
-}
 
 #hidden p,
 #hidden-one p,
@@ -659,17 +642,9 @@ footer p {
 
 @media (min-width: 320px) and (max-width: 767px) {
 	#course-info h1,
-	#course-info h2 {
-		font-size: 7vw;
-		padding-top: 0;
-		text-align: center;
-		padding: 5px;
-		text-decoration: underline;
-	}
-	#course-info h4,
-	#course-info h3 {
+	#courses h1 {
 		font-size: 4vw;
-		padding-top: 10px;
+		padding-top: 5px;
 	}
 	#course-info img {
 		padding-top: 10px;
