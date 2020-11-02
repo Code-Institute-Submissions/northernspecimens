@@ -1,4 +1,4 @@
-// this javascript allows the burger button and its child elements to expand and show the links//
+/* this javascript allows the burger button and its child elements to expand and show the links https://vanilla-js-basic-project-4-navbar.netlify.app/ by John Smilga*/
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".links");
 
@@ -6,10 +6,11 @@ navToggle.addEventListener("click", function() {
     links.classList.toggle("show-links");
 });
 
+/*J Query date picker from https://jqueryui.com/datepicker/*/
 $(function() {
     $("#datepicker").datepicker();
 });
-/*javascript for the google maps API thanks to Code Institute, /*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing thank you to scaisEdge for helping with Google API and /*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US and https://jsfiddle.net/api/post/library/pure/
+/*javascript for the google maps API thanks to Code Institute, /*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing thank you to scaisEdge for helping with Google API and /*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US and
 https://developers.google.com/maps/documentation/javascript/examples/map-simple*/
 var map;
 
@@ -23,17 +24,12 @@ function initMap() {
     });
 
     var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    // Add some markers to the map.
-    // Note: The code uses the JavaScript Array.prototype.map() method to
-    // create an array of markers based on a given "locations" array.
-    // The map() method here has nothing to do with the Google Maps API.
     var markers = locations.map((location, i) => {
         return new google.maps.Marker({
             position: location,
             label: labels[i % labels.length],
         });
     });
-    // Add a marker clusterer to manage the markers.
     new MarkerClusterer(map, markers, {
         imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
@@ -72,7 +68,7 @@ var locations = [{
 
 $(".hide").click(function(){
     $("#hidden p").toggle("blind", 1000);
-})
+});
 
 $(".hide-two").click(function() {
     $("#hidden-one p").toggle("blind", 1000);
@@ -95,7 +91,7 @@ function carousel() {
     }
     slideIndex++;
     if (slideIndex > x.length) {
-        slideIndex = 1
+        slideIndex = 1;
     }
     x[slideIndex - 1].style.display = "block";
     setTimeout(carousel, 4000);
@@ -104,11 +100,12 @@ $("mySlides").fadeOut(1000, linear, function() {});
 
 /*Thank you to this coder who introduced me to redirecting the form https://stackoverflow.com/questions/44628146/how-can-i-make-php-redirect-after-email-message-was-sent/44628879 by user1752065 and who helped resolve an error https://stackoverflow.com/questions/50011443/tslint-how-to-disable-error-somevariable-is-declared-but-its-value-is-never-rea user Rachit Rawat*/
 
-function sendMail(contactForm) {
+function sendMail(_contactForm) {
     emailjs.send("gmail", "specimens", {
-            "from_name": contactForm.name.value,
-            "from_email": contactForm.email.value,
-            "project_request": contactForm.project.value
+name: "Chelsey Duffin",
+from_email: "northernspecimens@gmail.com",
+from_name: "Northern Specimens",
+reply_to: "northernspecimens@gmail.com",
         })
         .then(
             function(_response) {
