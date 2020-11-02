@@ -6,11 +6,11 @@ navToggle.addEventListener("click", function () {
   links.classList.toggle("show-links");
 });
 
-/*javascript for the google maps API thanks to Code Institute, /*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing thank you to scaisEdge for helping with Google API and /*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US and https://jsfiddle.net/api/post/library/pure/*/
  $( function() {
     $( "#datepicker" ).datepicker();
   });
-
+/*javascript for the google maps API thanks to Code Institute, /*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing thank you to scaisEdge for helping with Google API and /*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US and https://jsfiddle.net/api/post/library/pure/
+https://developers.google.com/maps/documentation/javascript/examples/map-simple*/
 var map;
 function initMap() {
      map = new google.maps.Map(document.getElementById("map"), {
@@ -45,7 +45,7 @@ function initMap() {
               {lat: 53.843432, lng: -1.6779166}
               ];
 
-/*this javascript is for the courses toggle buttons on the courses.html page https://api.jqueryui.com/toggle/ was used and tested to create this code*/
+/*this javascript is for the courses toggle buttons on the courses.html page https://api.jqueryui.com/toggle/ was used and tested to create this code and https://getbootstrap.com/docs/4.0/components/collapse/*/
 
 $( "button" ).click(function() {
   $( "#hidden p" ).toggle( "blind", 1000 );
@@ -58,6 +58,7 @@ $( "button" ).click(function() {
 $( "button" ).click(function() {
   $( "#hidden-two p" ).toggle( "blind", 1000 );
 });
+
 //this js code was taken from s3schools to create an automatic slideshow on the home page under "Our Services" https://www.w3schools.com/w3css/w3css_slideshow.asp//
 var slideIndex = 0;
 carousel();
@@ -76,35 +77,96 @@ function carousel() {
 $("mySlides").fadeOut(1000,linear,function(){
 });
 
-/*this is javascript for the toggle buttons on the courses page*/
-
-
-/*Javascript for the date picker on the book.html page*/
-
- $( function() {
-    $( "#datepicker" ).datepicker();
-  });
-
-
-/*this javascript is for the reviews section*/
+/*Thank you to this coder who introduced me to redirecting the form https://stackoverflow.com/questions/44628146/how-can-i-make-php-redirect-after-email-message-was-sent/44628879 by user1752065 and who helped resolve an error https://stackoverflow.com/questions/50011443/tslint-how-to-disable-error-somevariable-is-declared-but-its-value-is-never-rea user Rachit Rawat*/
 
 function sendMail(contactForm) {
     emailjs.send("gmail", "specimens", {
         "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummary.value
+        "from_email": contactForm.email.value,
+        "project_request": contactForm.project.value
     })
     .then(
-        function(response) {
+        function(_response) {
             alert('Thank you!')
             window.location.href = 'thank.html';
         },
-        function(error) {
+        function(_error) {
             alert("Please resubmit");
         }
 );
     return false; 
     } 
 
-   /*Thank you to this coder who introduced me to redirecting the form https://stackoverflow.com/questions/44628146/how-can-i-make-php-redirect-after-email-message-was-sent/44628879*/
-/*This javascript will produce the hidden div containing the form to order the taxidermy courses*/ 
+/*javascript conditional statements for booking page https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp*/
+function pressedOne() {
+  // Get the checkbox
+  var checkBoxBeg = document.getElementById("beginner");
+
+  // If the checkbox is checked, display the output text
+  if (checkBoxBeg.checked == true){
+    alert("Sorry, this course is full. Please select another");
+  } else {
+    document.getElementById("beginner").checked = false;
+  }
+}
+
+function pressedTwo() {
+  // Get the checkbox
+  var checkBoxInt = document.getElementById("intermediate");
+
+  // If the checkbox is checked, display the output text
+  if (checkBoxInt.checked == true){
+    alert("This course is available, please select a date");
+  } else {
+    document.getElementById("intermediate").checked = false;
+  }
+}
+
+function pressedThree() {
+  // Get the checkbox
+  var checkBoxAdv = document.getElementById("advanced");
+
+  // If the checkbox is checked, display the output text
+  if (checkBoxAdv.checked == true){
+    alert("This course is available, please select a date");
+  } else {
+    document.getElementById("advanced").checked = false;
+  }
+}
+
+function pressedFour() {
+  // Get the checkbox
+  var checkBoxRep = document.getElementById("reptiles");
+
+  // If the checkbox is checked, display the output text
+  if (checkBoxRep.checked == true){
+    alert("Sorry, this course is full. Please select another");
+  } else {
+    document.getElementById("repiles").checked = false;
+  }
+}
+
+function pressedFive() {
+  // Get the checkbox
+  var checkBoxBir = document.getElementById("birds");
+
+  // If the checkbox is checked, display the output text
+  if (checkBoxBir.checked == true){
+    alert("Sorry, this course is full. Please select another");
+  } else {
+    document.getElementById("birds").checked = false;
+  }
+}
+
+
+function pressedSix() {
+  // Get the checkbox
+  var checkBoxMam = document.getElementById("mammals");
+
+  // If the checkbox is checked, display the output text
+  if (checkBoxMam.checked == true){
+    alert("Sorry, this course is full. Please select another");
+  } else {
+    document.getElementById("mammals").checked = false;
+  }
+}
