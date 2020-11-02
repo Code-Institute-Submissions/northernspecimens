@@ -2,7 +2,7 @@
 html {
 	scroll-behavior: smooth;
 }
-
+/*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US*/
 div#map {
 	height: 300px;
 	box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
@@ -16,9 +16,7 @@ div#map {
 	}
 }
 
-
 /*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US*/
-
 html,
 body {
 	height: 100%;
@@ -94,6 +92,8 @@ section {
 	border-bottom: 1px
 }
 
+
+
 hr {
 	width: 80%;
 	align-content: center;
@@ -113,7 +113,7 @@ hr {
 }
 
 
-/*Thank you to the wonderful....for aiding with this complex navigation bar*/
+/*Thank you to the wonderful Projects by John Smilga https://vanilla-js-basic-project-4-navbar.netlify.app/for aiding with this complex navigation bar*/
 
 nav {
 	background-color: white;
@@ -157,7 +157,6 @@ nav {
 	background-color: rgba(199, 191, 191, 0.322);
 	color: black;
 	margin-bottom: 1px;
-	box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
 }
 
 .links {
@@ -168,11 +167,11 @@ nav {
 }
 
 .show-links {
-	height: 160px;
+	height: auto;
 }
 
 
-/*media quries for the navigation bar*/
+/*media quries for the navigation bar https://vanilla-js-basic-project-4-navbar.netlify.app/*/
 
 @media screen and (min-width: 800px) {
 	.nav-center {
@@ -201,7 +200,7 @@ nav {
 		display: flex;
 	}
 	.links a {
-		padding: 0;
+		padding: 5px;
 		margin: 0 0.5rem;
 	}
 	.links a:hover {
@@ -211,7 +210,7 @@ nav {
 }
 
 
-/*Home page css code. References: */
+/*Home page css code. References: https://vannilla-js-basic-project-10-scroll.netlify.app/*/
 
 #home-page {
 	min-height: 100vh;
@@ -247,10 +246,7 @@ nav {
 }
 
 
-/* sections and title */
-
-
-/*This nifty title code helped make this more simpler*/
+/*This nifty title code helped make this more simpler https://www.vanillajavascriptprojects.com/*/
 
 .title h1 {
 	text-align: center;
@@ -332,7 +328,7 @@ nav {
 	}
 }
 
-/*css for carousel/javascript slide show*/
+/*css for carousel/javascript slide show https://www.w3schools.com/bootstrap/bootstrap_carousel.asp*/
 #services {
     margin: 0 auto;
     width: 90%;
@@ -666,15 +662,15 @@ footer p {
 
 #book {
 	background: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)), background url("https://i.imgur.com/M9JGebg.jpg") center/cover no-repeat;
-	overflow: hidden;
-	position: relative;
 	margin-bottom: 10px;
+
 }
 
 #book-content {
 	background-color: lightgray;
 	margin-top: 20px;
 	opacity: 0.8;
+
 }
 
 #book-content h4 {
@@ -704,7 +700,9 @@ label {
 	color: black;
 	font-size: 20px;
 }
-
+form .btn {
+    transform: translate(300%, -10%);
+}
 
 /*https://getbootstrap.com/docs/4.0/components/forms/*/
 
@@ -716,6 +714,10 @@ label {
 	font-size: 15px;
 }
 
+.form-check {
+margin: 0 auto;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
 	label {
 		font-size: 2vw;
@@ -724,8 +726,20 @@ label {
 		font-size: 4vw;
 		text-align: center;
 	}
+    form .btn {
+    transform: translate(100%, -10%);
+}
 }
 
+@media screen and (min-width: 1024px) {
+    #book, #book-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+    form .btn {
+    transform: translate(100%, -10%);
+}
+}
 
 /*find us css*/
 
