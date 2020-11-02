@@ -2,7 +2,13 @@
 html {
 	scroll-behavior: smooth;
 }
+
+
+/*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing thank you to scaisEdge for helping with Google API*/
+
+
 /*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US*/
+
 div#map {
 	height: 300px;
 	box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
@@ -16,7 +22,9 @@ div#map {
 	}
 }
 
+
 /*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US*/
+
 html,
 body {
 	height: 100%;
@@ -66,7 +74,7 @@ p {
 }
 
 .btn {
-    text-align: center;
+	text-align: center;
 	justify-content: center;
 	display: flex;
 	position: relative;
@@ -76,11 +84,11 @@ p {
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
 }
+
 .btn:hover {
 	color: white;
 	background-color: black;
 }
-
 
 @media (min-width: 320px) and (max-width: 767px) {
 	h1 {
@@ -91,8 +99,6 @@ p {
 section {
 	border-bottom: 1px
 }
-
-
 
 hr {
 	width: 80%;
@@ -168,7 +174,7 @@ nav {
 
 .show-links {
 	height: auto;
-    padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 
 
@@ -203,7 +209,6 @@ nav {
 	.links a {
 		padding: 5px;
 		margin: 0 0.5rem;
-        
 	}
 	.links a:hover {
 		padding: 0;
@@ -261,23 +266,19 @@ nav {
 #about {
 	height: auto;
 	overflow: hidden;
-    width: 90%;
-    margin: 0 auto;
+	width: 90%;
+	margin: 0 auto;
 }
 
 #about h1 {
 	font-size: 40px;
-    text-align: center;
-}
-
-#about-text, #about-two {
-	background-color: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)), lightgrey;
+	text-align: center;
 }
 
 #about-text p,
 #about-two p {
 	padding: 10px;
-    font-size: 20px;
+	font-size: 20px;
 }
 
 #services {
@@ -297,16 +298,15 @@ nav {
 	#fish img {
 		margin-bottom: 10px;
 	}
-    #about-text p,
-	#about-two p{
-        font-size: 15px;
+	#about-text p,
+	#about-two p {
+		font-size: 15px;
 		text-align: center;
 		color: black;
 		padding-bottom: 5px;
 	}
-    #about-text h1,
-	#about-two h1,
-	{
+	#about-text h1,
+	#about-two h1 {
 		font-size: 4vw;
 	}
 }
@@ -316,25 +316,30 @@ nav {
 		display: none;
 	}
 }
+
 @media (min-width: 1350px) and (max-width: 1550px) {
-    #about-text p {
-        font-size: 1.2vw;
-    }
-}
-@media screen and (min-width: 1550px) {
-    #hidden-image img {
-        transform: translate(10%, 0%);
-    }
-    #about-text p {
-        font-size:1.3vw;
+	#about-text p {
+		font-size: 1.2vw;
 	}
 }
 
-/*css for carousel/javascript slide show https://www.w3schools.com/bootstrap/bootstrap_carousel.asp*/
-#services {
-    margin: 0 auto;
-    width: 90%;
+@media screen and (min-width: 1550px) {
+	#hidden-image img {
+		transform: translate(10%, 0%);
+	}
+	#about-text p {
+		font-size: 1.3vw;
+	}
 }
+
+
+/*css for carousel/javascript slide show https://www.w3schools.com/bootstrap/bootstrap_carousel.asp*/
+
+#services {
+	margin: 0 auto;
+	width: 90%;
+}
+
 .slide-container {
 	width: auto;
 	margin: 0 auto;
@@ -359,7 +364,7 @@ nav {
 		height: 400px;
 		margin-bottom: 10px;
 	}
-    	#services p {
+	#services p {
 		font-size: 15px;
 		text-align: center;
 		color: black;
@@ -380,14 +385,14 @@ nav {
 #learn {
 	height: auto;
 	overflow: hidden;
-    width: 90%;
-    margin: 0 auto;
+	width: 90%;
+	margin: 0 auto;
 }
 
 #info {
 	border: 1px solid white;
 	background-color: lightgrey;
-    overflow: hidden;
+	overflow: hidden;
 }
 
 #info h2 {
@@ -396,10 +401,11 @@ nav {
 	color: black;
 	padding-top: 5px;
 }
+
 #info p {
-    text-align: center;
-    padding: 5px;
-    overflow: hidden;
+	text-align: center;
+	padding: 5px;
+	overflow: hidden;
 }
 
 #skull img {
@@ -429,7 +435,7 @@ nav {
 	}
 	#info .btn {
 		transform: translate(0%, 30%);
-        margin-bottom: 5px;
+		margin-bottom: 5px;
 	}
 	#learn {
 		margin-bottom: 10px;
@@ -438,23 +444,21 @@ nav {
 
 @media screen and (min-width: 1350px) {
 	#learn {
-        width: 80%;
+		width: 80%;
 	}
-    #info {
-        margin-top: 10%;
-    }
+	#info {
+		margin-top: 10%;
+	}
 }
-
 
 
 /*css for review section on home page*/
 
 #reviews {
-    width: 90%;
-    margin: 0 auto;
+	width: 90%;
+	margin: 0 auto;
 	height: 330px;
 	background-color: lightgrey;
-
 	text-align: center;
 }
 
@@ -556,6 +560,9 @@ nav {
 
 /*footer code i took alot of this section from my previous project as it seemed to suit both sites well. This was inspired by the code institute project*/
 
+
+/*https://stackoverflow.com/questions/9792816/apply-drop-shadow-to-border-top-only/ link for top box shadow*/
+
 footer {
 	position: relative;
 	bottom: 0;
@@ -604,30 +611,28 @@ footer p {
 }
 
 
-/**/
-
-
-/*https://stackoverflow.com/questions/9792816/apply-drop-shadow-to-border-top-only/ link for top box shadow*/
+/*foot css ends*/
 
 
 /*css for courses page*/
 
-#course-info, #courses {
+#course-info,
+#courses {
 	width: 90%;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
-#course-info h1, #courses h1 {
+#course-info h1,
+#courses h1 {
 	font-size: 2vw;
-    text-align: center;
-    margin-top: 10px;
-}
-#course-info .btn {
-  width: 100%;
-  margin: auto 0;
+	text-align: center;
+	margin-top: 10px;
 }
 
-/*https://www.w3schools.com/howto/howto_css_center_button.asp used to center buttons*/
+#course-info .btn {
+	width: 100%;
+	margin: auto 0;
+}
 
 #hidden p,
 #hidden-one p,
@@ -653,26 +658,21 @@ footer p {
 	}
 }
 
-@media screen and (min-width: 1024px) {
-	{
-		display: none;
-	}
-}
-
 
 /*booking page css*/
 
 #book {
 	background: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)), background url("https://i.imgur.com/M9JGebg.jpg") center/cover no-repeat;
 	margin-bottom: 10px;
-
 }
+
+
+/*https://www.w3schools.com/css/css_image_transparency.asp*/
 
 #book-content {
 	background-color: lightgray;
 	margin-top: 20px;
 	opacity: 0.8;
-
 }
 
 #book-content h4 {
@@ -702,9 +702,14 @@ label {
 	color: black;
 	font-size: 20px;
 }
+
+
+/*https://www.w3schools.com/html/html_forms.asp*/
+
 form .btn {
-    transform: translate(300%, -10%);
+	transform: translate(300%, -10%);
 }
+
 
 /*https://getbootstrap.com/docs/4.0/components/forms/*/
 
@@ -717,7 +722,7 @@ form .btn {
 }
 
 .form-check {
-margin: 0 auto;
+	margin: 0 auto;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -728,20 +733,22 @@ margin: 0 auto;
 		font-size: 4vw;
 		text-align: center;
 	}
-    form .btn {
-    transform: translate(100%, -10%);
-}
+	form .btn {
+		transform: translate(100%, -10%);
+	}
 }
 
 @media screen and (min-width: 1024px) {
-    #book, #book-content {
-        width: 90%;
-        margin: 0 auto;
-    }
-    form .btn {
-    transform: translate(100%, -10%);
+	#book,
+	#book-content {
+		width: 90%;
+		margin: 0 auto;
+	}
+	form .btn {
+		transform: translate(100%, -10%);
+	}
 }
-}
+
 
 /*find us css*/
 
@@ -878,54 +885,50 @@ margin: 0 auto;
 }
 
 
-/*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing thank you to scaisEdge for helping with Google API*/
-
-
-/*https://www.w3schools.com/css/css_image_transparency.asp*/
-
-
-/*https://www.w3schools.com/html/html_forms.asp*/
-
 /*https://stackoverflow.com/questions/54334562/center-image-in-bootstrap user Iskandar Reza*/
+
 #shop {
-    margin: 0 auto;
-    width: 90%;
+	margin: 0 auto;
+	width: 90%;
 }
+
 #shop-front h1 {
 	font-size: 2vw;
 	text-align: center;
-    margin-top: 20px;
+	margin-top: 20px;
 }
-#shop-front .btn: {
+
+#shop-front .btn {
 	margin-bottom: 20px;
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
-    #shop-front h1 {
-        font-size: 4vw;
-    }
-    }
+	#shop-front h1 {
+		font-size: 4vw;
+	}
+}
 
 #error {
-    width: 90%;
-    margin: auto 0;
+	width: 90%;
+	margin: auto 0;
 }
 
-#dark-owl .btn{
-    float: right;
-    font-size: 40px;
-    transform: translate(-10%, -400%);
+#dark-owl .btn {
+	float: right;
+	font-size: 40px;
+	transform: translate(-10%, -400%);
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-#dark-owl .btn{
-    float: right;
-    font-size: 40px;
-    transform: translate(-10%, -400%);
-}
+	#dark-owl .btn {
+		float: right;
+		font-size: 40px;
+		transform: translate(-10%, -400%);
+	}
 }
 
 @media screen and (min-width: 1024px) {
-    #dark-owl .btn {
-        transform: translate(-60%, -600%);
-    }
+	#dark-owl .btn {
+		transform: translate(-60%, -600%);
+	}
 }
