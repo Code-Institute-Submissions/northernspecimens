@@ -379,10 +379,11 @@ nav {
 
 
 @media (min-width: 678px) and (max-width: 1024px) { #skull {
-        width: 90%;
-        align-content: center;
-        justify-content: center;
-        transform: translate(5%, 0%);
+        margin-right: 15%;
+        margin-left: 10%;
+}
+#info {
+    margin-left: 15%;
 }
 }
 
