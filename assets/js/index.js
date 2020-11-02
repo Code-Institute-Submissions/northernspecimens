@@ -112,8 +112,8 @@ function sendMail(contactForm) {
         })
         .then(
             function(_response) {
-                alert('Thank you!')
-                window.location.href = 'thank.html';
+                alert("Thank you!");
+            window.location.href = 'thank.html';
             },
             function(_error) {
                 alert("Please resubmit");
@@ -121,6 +121,7 @@ function sendMail(contactForm) {
         );
     return false;
 }
+
 
 /*javascript conditional statements for booking page https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp https://stackoverflow.com/questions/8206565/check-uncheck-checkbox-with-javascript-jquery-or-vanilla user Alex Peattie*/
 function pressedOne() {
