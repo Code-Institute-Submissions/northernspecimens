@@ -39,7 +39,6 @@ header {
 
 h1 {
 	color: black;
-	margin-left: 20px;
 	font-family: 'Cinzel', serif;
 	padding: 20px;
 	text-decoration: underline;
@@ -247,27 +246,23 @@ nav {
 #about {
 	height: auto;
 	overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
 }
 
 #about h1 {
 	font-size: 40px;
+    text-align: center;
 }
 
-#about-text {
+#about-text, #about-two {
 	background-color: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)), lightgrey;
-}
-
-#about-two {
-	background-color: lightgrey, linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7));
-}
-
-#about-two h2 {
-	padding-top: 10px;
 }
 
 #about-text p,
 #about-two p {
 	padding: 10px;
+    font-size: 20px;
 }
 
 #services {
@@ -287,48 +282,44 @@ nav {
 	#fish img {
 		margin-bottom: 10px;
 	}
-}
-
-@media screen and (min-width: 1024PX) {
-	#about-text p,
-	#about-two p {
-		font-size: 30px;
-	}
-}
-
-@media (min-width: 678px) and (max-width: 1024px) {
-	#about-text p,
-	#about-two p {
-		font-size: 20px;
-	}
-}
-
-@media (min-width: 0px) and (max-width: 1024px) {
-	#hidden-image img {
-		display: none;
-	}
-}
-
-
-@media (min-width: 320px) and (max-width: 767px) {
-	#about-text p,
-	#about-two p,
-	#services p {
-		position: relative;
-		transform: translate(0%, 0%);
-		font-size: 15px;
+    #about-text p,
+	#about-two p{
+        font-size: 15px;
 		text-align: center;
 		color: black;
 		padding-bottom: 5px;
 	}
-	#about-text h1,
+    #about-text h1,
 	#about-two h1,
 	{
 		font-size: 4vw;
 	}
 }
-/**/
 
+@media (min-width: 0px) and (max-width: 1350px) {
+	#hidden-image img {
+		display: none;
+	}
+}
+@media (min-width: 1350px) and (max-width: 1550px) {
+    #about-text p {
+        font-size: 1.2vw;
+    }
+}
+@media screen and (min-width: 1550px) {
+    #hidden-image img {
+        transform: translate(10%, 0%);
+    }
+    #about-text p {
+        font-size:1.3vw;
+	}
+}
+
+/**/
+#services {
+    margin: 0 auto;
+    width: 90%;
+}
 .slide-container {
 	width: auto;
 	margin: 0 auto;
@@ -352,6 +343,12 @@ nav {
 	.slide-container .mySlides {
 		height: 400px;
 		margin-bottom: 10px;
+	}
+    	#services p {
+		font-size: 15px;
+		text-align: center;
+		color: black;
+		padding-bottom: 5px;
 	}
 }
 
@@ -438,10 +435,11 @@ nav {
 /*css for review section on home page*/
 
 #reviews {
+    width: 90%;
+    margin: 0 auto;
 	height: 330px;
 	background-color: lightgrey;
-	margin: 10px;
-	padding: 10px;
+
 	text-align: center;
 }
 
