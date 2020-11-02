@@ -628,7 +628,7 @@ display: inline-block;
 #book-content {
     background-color: lightgray;
     margin-top: 20px;
-    opacity: 0.3;
+    opacity: 0.8;
 }
 #book-content h4 {
     color: black;
@@ -636,11 +636,7 @@ display: inline-block;
     text-decoration: underline;
     padding: 10px;
 }
-#Form1 {
-    opacity: 1;
-    position: relative;
-    align-content: center;
-}
+
 #book-content .btn {
     text-align: center;
     justify-content: center;
@@ -697,24 +693,21 @@ label {
     font-size: 15px;
 }
 
-#contact ul li{
+#find-us ul li{
     background-color: white;
     opacity: 0.8;
     text-align: center;
-    padding: 10px;
+        list-style-type: none;
+        margin-right: 10%;
+        padding: 10px;
 }
 
-#directions {
-        padding: 5px;
-        overflow: hidden;
-    }
 
-
-@media (min-width: 320px) and (max-width: 767px) { #find-us h1, #directions h1 {
+@media (min-width: 320px) and (max-width: 767px) { #find-us h1 {
     font-size: 6vw;
     text-align: center;
 }
-#find-us h4, #directions h4 {
+#find-us h4 {
     font-size: 15px;
     text-align: center;
 }
@@ -723,11 +716,6 @@ label {
     font-size: 3vw;
     text-align: center;
     list-style-type: none;
-}
-#contact ul li{
-    text-align: center;
-    align-content: center;
-    min-width: 250px;
 }
 }
 /*this css code alters the thank page html. The below code was set for screens between 768 and 1025px.*/
