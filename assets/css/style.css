@@ -624,6 +624,10 @@ footer p {
     text-align: center;
     margin-top: 10px;
 }
+#course-info .btn {
+  width: 100%;
+  margin: auto 0;
+}
 
 /*https://www.w3schools.com/howto/howto_css_center_button.asp used to center buttons*/
 
