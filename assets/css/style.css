@@ -345,13 +345,13 @@ nav {
 
 @media screen and (min-width: 1024px) { #skull img
     {
+        float: left;
         margin-right: 15%;
-        transform: translate(12%, 0%);
+
         }
         #info {
-        margin-left: 20%;
+        float: right;
         margin-top: 40px;
-        transform: translate(-10%, 0%);
 
         }
         #info h2 {
@@ -365,7 +365,6 @@ nav {
              transform: translate(0%, 30%);
         }
         #learn {
-            overflow: hidden;
             margin-bottom: 10px;
         }
     }
@@ -377,15 +376,6 @@ nav {
 }
 }
 
-
-@media (min-width: 678px) and (max-width: 1024px) { #skull {
-        margin-right: 15%;
-        margin-left: 10%;
-}
-#info {
-    margin-left: 15%;
-}
-}
 
 
 @media (min-width: 320px) and (max-width: 767px) { 
@@ -545,6 +535,10 @@ display: inline-block;
     .media i {
         font-size: 200%;
     }
+}
+@media (min-width: 320px) and (max-width: 767px) {footer p {
+    font-size: 20px;
+}
 }
 /**/
 
