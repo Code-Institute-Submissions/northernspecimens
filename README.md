@@ -30,8 +30,8 @@ The website also has a shop, courses and orders page that allow the user to easi
 
 ## Wireframes.  Completed 27th September.
 
-## All
-![Full Wireframes](https://www.figma.com/file/AnaWjsfcUxc8iUiT7SR5Me/Frontend).
+[Full Wireframes](https://www.figma.com/file/AnaWjsfcUxc8iUiT7SR5Me/Frontend).
+* Wireframe screenshots located in documents/screenshots.
 
 ## Features
 * The index.html page is the home page of the site. The page is minimalist so that the images speak for themselves and the user is not over worked with too much text. A fully interactive nav bar is located to allow for full access to the rest of the site.
@@ -59,13 +59,14 @@ Languages used: **HTML5, CSS3 and Javascript**
 * [EmailJs](https://dashboard.emailjs.com/) used to send a confirmation email to the user once form has been submitted.
 * [Git](http:///git-scm.com) was used as a browser add on to allow the commit of data to the repository from GitPod.
 * [GitHub](http://github.com) was used to store the code after it was pushed from GitPod using Git.
+* [Figma](https://www.figma.com/file/AnaWjsfcUxc8iUiT7SR5Me/Frontend?node-id=0%3A1) used to create the wireframes.
 
 ## Testing
 
 [W3C CSS Validator - complete](http://jigsaw.w3.org/css-validator/images/vcss-blue.png)
+
 **Tested through Jshint**
 * Slight issue with Google Maps API, "const" and "new" declorations not recommended. But no major issues.
-
 
 
 ### First Time Visitor Goals
