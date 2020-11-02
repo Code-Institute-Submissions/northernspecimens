@@ -31,13 +31,7 @@ The website also has a shop, courses and orders page that allow the user to easi
 ## Wireframes.  Completed 27th September.
 
 ## All
-![Full Wireframes](documents/screenshots/full.png).
-## Desktop
-![Desktop Wireframe](documents/screenshots/desktop.png).
-## Tablet
-![Tablet Wireframe](documents/screenshots/tablet.png)
-## Mobile
-![Mobile Wireframe](documents/screenshots/mobile.png)
+![Full Wireframes](https://www.figma.com/file/AnaWjsfcUxc8iUiT7SR5Me/Frontend).
 
 ## Features
 * The index.html page is the home page of the site. The page is minimalist so that the images speak for themselves and the user is not over worked with too much text. A fully interactive nav bar is located to allow for full access to the rest of the site.
@@ -68,53 +62,56 @@ Languages used: **HTML5, CSS3 and Javascript**
 ## Testing
 
 [W3C CSS Validator - complete](http://jigsaw.w3.org/css-validator/images/vcss-blue.png)
+**Tested through Jshint**
 
 
 
 ### First Time Visitor Goals
  **As a first-time customer/user, I want to easily understand the main purpose of the site and know what products I can purchase.**
-1. Users are initially greeted with an enter page that has the companys name social media and a visual woodland background which hints at the carpentry element of the site.
+1. The home page is very minimalist, with plenty of taxidermy images. There is a clear nav bar that has links leading to all pages of the site.
 2. Upon entering the site the user is met with a hero image and an about section, explaining the purpose and objectives behind the company.
-3. The about page is easily accessible from the navigation bar and explains what Magnus Woodcraft is and the products they sell/design.
+3. The home page scrolls smoothly, each section has its clear markings. Their is a shop button on the hero image and a learn section to ask the user if they want to learn taxidermy and a button to the courses page.
 
- **I want to navigate the website easily, so I can find all the information I need to know and to buy the product i need.**
-1. The enter page has a singular button that says "take a walk" when the cursor hovers over it, to allow easy access to the site.
-2. The navigation bar follows the user on all devices, the user does not have to scroll to the top of the page to click on this, instead the nav bar scrolls with them for convenience. Moreover, each link works and directs the user to their desired page, regardless of what page they are currently on.
-3. The Order page is accessible from all pages of the site, a simple and easy to fill-out form is displayed. Each device will have a different background for the order form adding interactivity when altering the size of the browser page. The form upon completion is met with a thank you message and a notification to state the waiting time for completion of orders.
-Also, the form will only be submitted when all fields are filled in appropriately and a genuine email address is included. 
+ **I want to navigate the website easily, so I can find all the information I need to know and to buy the product/course I want/need. I want to revieve a confirmation email also.**
+1. The navigation bar is accessible from every page on the site, or a home button is presented. Buttons are clearly labelled to tell the user where they lead.
+2. The shop and course pages clearly state what is avaible for purchase and the price for each product. A form is submitted on the order page (directly or indirectly from the nav or shop/course buttons). This sends and email.
+3. A thank you page is presented and an alert box appears upon submission. Checkboxes indicate if a course is available or not. A date picker allows the user to select a date for their convenience. 
+Also, the form will only be submitted when all fields are filled in. 
 
- **I want to be able to get in touch with the buisness and look at their social media.**
-
-1. An order form is clearly displayed on the order page, both orders and gneral enquiries can be submitted
-2. The companies social media pages including, instagram, snapchat, youtube as well as email are linked on the borrom of every page.
+ **I want to be able to get in touch with the buisness and look at their social media, look at any reviews to see if they are reliable/professional.**
+1. A find us page is accessible from the nav bar across all pages of the site.
+2. A Google Maps API with clear markers shows the location of the buisness.
+3. Reviews are displayed at the bottom of the home page to verify quilty and reliability of the buisness. Social media links are at the bottom of every page.
 
 #### Returning Visitor Goals
- **As a Returning Visitor, I want to be able to contact the site owner to check the status of my order.**
+ **As a Returning Visitor, I want to be able to easily contact the site owner to check the status of my order.**
 1. The companies social media accounts are accessible from the icons at the bottom of every page.
-2. General queries can be submitted through the order form on the order page.
+2. General queries can be submitted through the order form on the order page and contact info is on the find us page.
+3. Google maps APIs to locate buisness.
 
- **I want to be inspired by the buisness when desining my own product.**
-1. The visuals on both the about and projects pages are easily viewed on all devices and resolutions.
-2. Information about the main inspriations for the carpenters are mentioned on the about page, along with the carousel images to allow the customer to gain knowledge on these particular styles and what they look like.
-3. The order form allows the attachment of files from the computers system drive, this is labelled as "send us your ideas", this allows the company and customer to share visual representations of custom orders. Giving maximum benefit to the carpenter when bringing absolute customer satisfaction.
+ **I want to be able to book another course/make another purchase and check their social media.**
+1. The courses page is accessed from the nav bar as is the shop pages. Buttons on the site also link here for easy access.
+2. The checkboxes let the user know if their course is available or not. 
+3. The social media links are at the bottom of every page.
 
- **I want to be able to easily access any information I may have missed on my first visit.**
-1. The site is easily accessible for returning visitors as mentioned above.
-2. The navigation bar allows easy access to all pages.
-3. Information is displayed clearly on all pages and is easily readable on all devices.
+ **I want to be able to use the Google API to locate my course/the buisness so I can plan my journey there**
+1. The Google Maps API shows the location of all courses and the buisness address using clear markers and a legend/key near the maps.
+2. The date picker allows the user to select their date in enough time to plan their jouney.
 
 ### Frequent User Goals
- **As a Frequent User, I want to be able to trade with the business effectively, through the contact form.**
-1. As mentioned previously the contact form is also for general contact and open to any questions returning customers may have.
+ **As a Frequent User, I want to be able to book anymore courses, advancing my skills through my learning.**
+1. As mentioned previously the courses pages and form can be access and new key skills learnt.
+2. The toggle buttons on the courses page give clear information to what the courses entail.
 
- **I want to check back to their social media for any news/updates.**
-1. The social media links are easily accesible through any page of the site, allowing the customer to check back for updates.
+ **I want to be able to make purchases of new products and contact the buisness about custom orders/pet preservation.**
+1. The social media links are easily accesible through any page of the site, allowing the customer to check back for ner products.
 2. The companies pages on instagram, youtube and snapchat will also have daily updates that the customer can subscribe to.
+3. contact info means they user can contact the buisness for larger, custom orders/pet preservation.
 
  **I want to be able to pass on information to third parties in regards to buisness to buisness production deals.**
-1. The projects page is meant to highlight the future and current potential of the business to other businesses that are experinced in the woodcrafting trades.
-2. Restoration and larger, log cabin projects hightlight the ambition of the company and the vast experience of the carpenters that are adept across different branches of carpentry.
-3. The site is visually responsive and attractive across all devices, allowing for easy referencing and a good first impression to willing tradesmen.
+1. Information for the buisness owner is easily found on the find us page.
+2. Text can be inputted into the form for submission, so the buisness can recieve custom orders/buisness enquiries.
+3. The site is visually responsive and attractive across all devices, allowing for easy referencing and a good first impression to willing customers. Reviews are also seen on the home page to encourage new trade.
 
 
 ## Further testing
