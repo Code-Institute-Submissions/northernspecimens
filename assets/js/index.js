@@ -152,7 +152,7 @@ function pressedFive() {
 
   // If the checkbox is checked, display the output text
   if (checkBoxBir.checked == true){
-    alert("Sorry, this course is full. Please select another");
+    alert("This course is available, please select a date");
   } else {
     document.getElementById("birds").checked = false;
   }
@@ -165,7 +165,7 @@ function pressedSix() {
 
   // If the checkbox is checked, display the output text
   if (checkBoxMam.checked == true){
-    alert("Sorry, this course is full. Please select another");
+    alert("This course is available, please select a date");
   } else {
     document.getElementById("mammals").checked = false;
   }
