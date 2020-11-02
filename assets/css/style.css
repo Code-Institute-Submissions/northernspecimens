@@ -315,7 +315,7 @@ nav {
 	}
 }
 
-/**/
+/*css for carousel/javascript slide show*/
 #services {
     margin: 0 auto;
     width: 90%;
@@ -891,39 +891,21 @@ label {
 
 /*https://www.w3schools.com/html/html_forms.asp*/
 
-#shop-front h1 {
-	margin: 10px;
-	font-size: 3vw;
-	text-align: center;
-	padding: 5px;
+/*https://stackoverflow.com/questions/54334562/center-image-in-bootstrap user Iskandar Reza*/
+#shop {
+    margin: 0 auto;
+    width: 90%;
 }
-
+#shop-front h1 {
+	font-size: 2vw;
+	text-align: center;
+    margin-top: 20px;
+}
 #shop-front .btn: {
 	margin-bottom: 20px;
 }
-
-#shop-front img {
-	line-height: 20px;
-}
-
-@media screen and (min-width: 1024PX) {
-	#shop-front img {
-		height: 300px;
-		width: 350px;
-		align-content: center;
-		transform: translate(30%, 0%);
-		line-height: 20px;
-	}
-	#shop-front .btn {
-		width: 350px;
-		transform: translate(30%, 0%);
-		margin-bottom: 15px;
-	}
-}
-
 @media (min-width: 320px) and (max-width: 767px) {
-	#shop-front img {
-		height: 250px;
-		align-content: center;
-	}
-}
+    #shop-front h1 {
+        font-size: 4vw;
+    }
+    }
