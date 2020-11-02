@@ -46,6 +46,7 @@ A simple design is used to create more focus on the business products themselves
 
 ### Future features
 * Future features to include into the website would be a blog and checkout page.
+* Future features: checkboxes uncheck if another one is checked.
 
 
 ## Technologies used:
@@ -63,6 +64,7 @@ Languages used: **HTML5, CSS3 and Javascript**
 
 [W3C CSS Validator - complete](http://jigsaw.w3.org/css-validator/images/vcss-blue.png)
 **Tested through Jshint**
+* Slight issue with Google Maps API, "const" and "new" declorations not recommended. But no major issues.
 
 
 
@@ -127,6 +129,7 @@ Also, the form will only be submitted when all fields are filled in.
 1. The some of the social media pages for this company do not exist yet.
 2. The email submission is not validated as an email but will prevent form submission if the field is empty.
 3. The form submission button on the book.html page will not stay centered.
+4. project submission text box does not translate to the email sent via emailJS.
 
 ## Deployment
 
@@ -140,31 +143,20 @@ Also, the form will only be submitted when all fields are filled in.
 
 ## Credits
 * Code: Special reference to those that allowed for easy application of the carousels and their respective images. [Sitepoint creator - George Martsoukos](http://www.sitepoint.com/full-screen-bootstrap-carousel-random-initial-image/). Other code references and achknowledgements are listed in the style.css file. All HTML references are the same and are as follows:
-* All media bootstrap containers, rows and columns instructed by [w3schools](https://www.w3schools.com/bootstrap/default.asp) [Again](https://www.w3schools.com/bootstrap/bootstrap_carousel.asp)
-* [Navbar] Huge contribution to John Smilga (https://vanilla-js-basic-project-4-navbar.netlify.app/).
-* [Responsive carousel images](https://www.w3schools.com/w3css/w3css_slideshow.asp//)my own images and decoration were added by me.
-* [Coding the carousel using Bootstrap](https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp) was used to establish the bootstrap coding for the carousel
+* All media bootstrap containers, rows and columns instructed by [w3schools](https://www.w3schools.com/bootstrap/default.asp) for bootstrap grids and [carousels](https://www.w3schools.com/bootstrap/bootstrap_carousel.asp)
+* [Navbar](https://vanilla-js-basic-project-4-navbar.netlify.app/) huge contribution to John Smilga who I took the nav and header css/js and html from. Also [this](https://vannilla-js-basic-project-10-scroll.netlify.app/) project I got the header and html smooth scroll css, also the idea for title divs.
+* [Responsive carousel images](https://www.w3schools.com/w3css/w3css_slideshow.asp//) my own images and decoration were added by me.
+* [Coding the carousel using Bootstrap](https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp) was used to establish the bootstrap coding for the carousel. This is were I got the [Javascript](https://www.w3schools.com/w3css/w3css_slideshow.asp//).
 * [Addition carousel coding tips](https://www.sitepoint.com/full-screen-bootstrap-carousel-random-initial-image/). By web developer George Martsouko was used to manipuate the position of the carousel to my liking.
-* [Google Maps](/*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US*/)[And](https://developers.google.com/maps/documentation/javascript/examples/map-simple*/)[More](*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing) thank to user scaisEdge.
+* [Google Maps](/*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US*/) the clusters for the locations and [here](https://developers.google.com/maps/documentation/javascript/examples/map-simple*/) for the map itself. And [this](*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing) helped to display the map in css, thanks to user scaisEdge.
 * [Date Picker](https://api.jqueryui.com/toggle/ ) and from [here](https://getbootstrap.com/docs/4.0/components/collapse/) and lots of tips from this [user](https://stackoverflow.com/questions/43168193/how-to-toggle-each-button-separately-on-multiple-buttons) Pablo.
+* [Forms](https://www.w3schools.com/html/html_forms_attributes.asp) and [form tags](https://www.w3schools.com/tags/tag_form.asp).
+* [Validated form](https://www.w3schools.com/js/js_validation.asp) using javascript and bootstrap.
+* [Checkbox](https://www.w3schools.com/html/html_forms.asp) help from this and [this](https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp) for alerts in js.
+* [Else/if](https://www.w3schools.com/jsref/jsref_if.asp) lots of help from this for checkboxes.
+* [emailJs](https://dashboard.emailjs.com/) was used to send the email to googlemail from the form.
+* [Reviews](https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp) taken from this link on w3schools and also from the bootstrap [site](https://getbootstrap.com/docs/4.0/components/carousel/).
+* [Rows](https://www.w3schools.com/jsref/jsref_if.asp) this was seriously helpful for both courses and shop pages from user Iskandar Reza.
 * ### Content: All content was written by the developer.
 * ### Media: All images were taken from [Pixabay](http://pixabay.com/), as they are royalty free and from Norther Specimens with exclusive permission (I own the company).
 * ### Achknowledgments: To my mentor, code institute and my family for allowing this to be an enjoyable process.
-
-https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing 
-
-
-https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
-
-https://www.w3schools.com/html/html_forms_attributes.asp
-
-
-Future features: checkboxes uncheck if another one is checked.
-
-https://www.w3schools.com/tags/tag_form.asp
-https://www.w3schools.com/js/js_validation.asp
-https://www.w3schools.com/html/html_forms.asp checkboxes
-https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
-https://www.w3schools.com/jsref/jsref_if.asp
-
-https://stackoverflow.com/questions/54334562/center-image-in-bootstrap user Iskandar Reza
