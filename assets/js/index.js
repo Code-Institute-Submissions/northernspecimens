@@ -1,4 +1,4 @@
-/* this javascript allows the burger button and its child elements to expand and show the links https://vanilla-js-basic-project-4-navbar.netlify.app/ by John Smilga*/
+/* this javascript allows the burger button and its child elements to expand and show the nav links it was originally created by https://vanilla-js-basic-project-4-navbar.netlify.app/ by John Smilga*/
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".links");
 
@@ -10,6 +10,7 @@ navToggle.addEventListener("click", function() {
 $(function() {
     $("#datepicker").datepicker();
 });
+
 /*javascript for the google maps API thanks to Code Institute, /*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing thank you to scaisEdge for helping with Google API and /*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US and
 https://developers.google.com/maps/documentation/javascript/examples/map-simple*/
 var map;
@@ -66,7 +67,7 @@ var locations = [{
 
 /*this javascript is for the courses toggle buttons on the courses.html page https://api.jqueryui.com/toggle/ was used and tested to create this code and https://getbootstrap.com/docs/4.0/components/collapse/ and some helpful tips off https://stackoverflow.com/questions/43168193/how-to-toggle-each-button-separately-on-multiple-buttons user Pablo*/
 
-$(".hide").click(function(){
+$(".hide").click(function() {
     $("#hidden p").toggle("blind", 1000);
 });
 
@@ -79,7 +80,7 @@ $(".hide-three").click(function() {
 });
 
 
-//this js code was taken from s3schools to create an automatic slideshow on the home page under "Our Services" https://www.w3schools.com/w3css/w3css_slideshow.asp//
+/*this js code was taken from s3schools to create an automatic slideshow on the home page under "Our Services" https://www.w3schools.com/w3css/w3css_slideshow.asp*/
 var slideIndex = 0;
 carousel();
 
@@ -102,15 +103,15 @@ $("mySlides").fadeOut(1000, linear, function() {});
 
 function sendMail(_contactForm) {
     emailjs.send("gmail", "specimens", {
-name: "Chelsey Duffin",
-from_email: "northernspecimens@gmail.com",
-from_name: "Northern Specimens",
-reply_to: "northernspecimens@gmail.com",
+            name: "Chelsey Duffin",
+            from_email: "northernspecimens@gmail.com",
+            from_name: "Northern Specimens",
+            reply_to: "northernspecimens@gmail.com",
         })
         .then(
             function(_response) {
                 alert("Thank you!");
-            window.location.href = 'thank.html';
+                window.location.href = 'thank.html';
             },
             function(_error) {
                 alert("Please resubmit");
@@ -122,10 +123,10 @@ reply_to: "northernspecimens@gmail.com",
 
 /*javascript conditional statements for booking page https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp https://stackoverflow.com/questions/8206565/check-uncheck-checkbox-with-javascript-jquery-or-vanilla user Alex Peattie*/
 function pressedOne() {
-    // Get the checkbox
+
     var checkBoxBeg = document.getElementById("beginner");
 
-    // If the checkbox is checked, display the output text
+
     if (checkBoxBeg.checked == true) {
         alert("Sorry, this course is full. Please select another");
     } else {
@@ -134,10 +135,10 @@ function pressedOne() {
 }
 
 function pressedTwo() {
-    // Get the checkbox
+
     var checkBoxInt = document.getElementById("intermediate");
 
-    // If the checkbox is checked, display the output text
+
     if (checkBoxInt.checked == true) {
         alert("This course is available, please select a date");
     } else {
@@ -146,10 +147,9 @@ function pressedTwo() {
 }
 
 function pressedThree() {
-    // Get the checkbox
+
     var checkBoxAdv = document.getElementById("advanced");
 
-    // If the checkbox is checked, display the output text
     if (checkBoxAdv.checked == true) {
         alert("This course is available, please select a date");
     } else {
@@ -158,10 +158,10 @@ function pressedThree() {
 }
 
 function pressedFour() {
-    // Get the checkbox
+
     var checkBoxRep = document.getElementById("reptiles");
 
-    // If the checkbox is checked, display the output text
+
     if (checkBoxRep.checked == true) {
         alert("Sorry, this course is full. Please select another");
     } else {
@@ -170,10 +170,9 @@ function pressedFour() {
 }
 
 function pressedFive() {
-    // Get the checkbox
+
     var checkBoxBir = document.getElementById("birds");
 
-    // If the checkbox is checked, display the output text
     if (checkBoxBir.checked == true) {
         alert("This course is available, please select a date");
     } else {
@@ -183,10 +182,9 @@ function pressedFive() {
 
 
 function pressedSix() {
-    // Get the checkbox
+
     var checkBoxMam = document.getElementById("mammals");
 
-    // If the checkbox is checked, display the output text
     if (checkBoxMam.checked == true) {
         alert("This course is available, please select a date");
     } else {
