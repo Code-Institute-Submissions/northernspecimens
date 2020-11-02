@@ -68,7 +68,7 @@ var locations = [{
     }
 ];
 
-/*this javascript is for the courses toggle buttons on the courses.html page https://api.jqueryui.com/toggle/ was used and tested to create this code and https://getbootstrap.com/docs/4.0/components/collapse/*/
+/*this javascript is for the courses toggle buttons on the courses.html page https://api.jqueryui.com/toggle/ was used and tested to create this code and https://getbootstrap.com/docs/4.0/components/collapse/ and some helpful tips off https://stackoverflow.com/questions/43168193/how-to-toggle-each-button-separately-on-multiple-buttons user Pablo*/
 
 $(".hide").click(function(){
     $("#hidden p").toggle("blind", 1000);
