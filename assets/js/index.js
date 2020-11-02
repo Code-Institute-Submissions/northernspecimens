@@ -70,17 +70,18 @@ var locations = [{
 
 /*this javascript is for the courses toggle buttons on the courses.html page https://api.jqueryui.com/toggle/ was used and tested to create this code and https://getbootstrap.com/docs/4.0/components/collapse/*/
 
-$("button").click(function() {
+$(".hide").click(function(){
     $("#hidden p").toggle("blind", 1000);
-});
+})
 
-$("button").click(function() {
+$(".hide-two").click(function() {
     $("#hidden-one p").toggle("blind", 1000);
 });
 
-$("button").click(function() {
+$(".hide-three").click(function() {
     $("#hidden-two p").toggle("blind", 1000);
 });
+
 
 //this js code was taken from s3schools to create an automatic slideshow on the home page under "Our Services" https://www.w3schools.com/w3css/w3css_slideshow.asp//
 var slideIndex = 0;
@@ -121,7 +122,7 @@ function sendMail(contactForm) {
     return false;
 }
 
-/*javascript conditional statements for booking page https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp*/
+/*javascript conditional statements for booking page https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp https://stackoverflow.com/questions/8206565/check-uncheck-checkbox-with-javascript-jquery-or-vanilla user Alex Peattie*/
 function pressedOne() {
     // Get the checkbox
     var checkBoxBeg = document.getElementById("beginner");
