@@ -7,7 +7,9 @@ navToggle.addEventListener("click", function () {
 });
 
 /*javascript for the google maps API thanks to Code Institute, /*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing thank you to scaisEdge for helping with Google API and /*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US and https://jsfiddle.net/api/post/library/pure/*/
-
+ $( function() {
+    $( "#datepicker" ).datepicker();
+  });
 
 var map;
 function initMap() {
@@ -39,7 +41,8 @@ function initMap() {
               {lat: 53.9586419, lng: -1.1156109},
               {lat: 53.9940619, lng: -1.563934},
               {lat: 53.9552604, lng: -2.0395033},
-              {lat: 53.9201868, lng: -1.8409911}
+              {lat: 53.9201868, lng: -1.8409911},
+              {lat: 53.843432, lng: -1.6779166}
               ];
 
 /*this javascript is for the courses toggle buttons on the courses.html page https://api.jqueryui.com/toggle/ was used and tested to create this code*/
