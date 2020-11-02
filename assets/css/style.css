@@ -310,6 +310,23 @@ nav {
 }
 
 
+@media (min-width: 320px) and (max-width: 767px) {
+	#about-text p,
+	#about-two p,
+	#services p {
+		position: relative;
+		transform: translate(0%, 0%);
+		font-size: 15px;
+		text-align: center;
+		color: black;
+		padding-bottom: 5px;
+	}
+	#about-text h1,
+	#about-two h1,
+	{
+		font-size: 4vw;
+	}
+}
 /**/
 
 .slide-container {
@@ -346,16 +363,19 @@ nav {
 }
 
 
-/**/
+/*css for the learn taxidermy section of the homepage*/
 
 #learn {
 	height: auto;
 	overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
 }
 
 #info {
 	border: 1px solid white;
 	background-color: lightgrey;
+    overflow: hidden;
 }
 
 #info h2 {
@@ -364,19 +384,15 @@ nav {
 	color: black;
 	padding-top: 5px;
 }
-
-#info li {
-	text-align: center;
-	color: grey;
-	list-style-type: none;
-	font-size: 3vw;
-	padding: 5px;
+#info p {
+    text-align: center;
+    padding: 5px;
+    overflow: hidden;
 }
 
 #skull img {
 	box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
 	align-content: center;
-	position: relative;
 }
 
 #info .btn {
@@ -396,19 +412,16 @@ nav {
 
 @media screen and (min-width: 1024px) {
 	#skull img {
-		float: left;
-		margin-right: 15%;
+        	transform: translate(0%, 0%);
 	}
 	#info {
-		float: right;
-		margin-top: 40px;
+        background-color: blue;
+        transform: translate(15%, 0%);
+    
 	}
 	#info h2 {
 		font-size: 3vw;
 		margin-top: 10px;
-	}
-	#info li {
-		font-size: 4vw;
 	}
 	#info .btn {
 		transform: translate(0%, 30%);
@@ -420,37 +433,13 @@ nav {
 
 @media screen and (min-width: 1150px) {
 	#info {
-		transform: translate(-30%, 0%);
+		transform: translate(10%, 0%);
 	}
 	#skull img {
-		transform: translate(30%, 0%);
+		transform: translate(-10%, 0%);
 	}
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-	#about-text p,
-	#about-two p,
-	#services p,
-	#info p {
-		position: relative;
-		transform: translate(0%, 0%);
-		font-size: 15px;
-		text-align: center;
-		color: black;
-		padding-bottom: 5px;
-	}
-	#about-text h1,
-	#about-two h1,
-	{
-		font-size: 4vw;
-	}
-	#carousel-item {
-		height: 120%;
-	}
-	#carousel-item h2 h4 {
-		font-size: 20px;
-	}
-}
 
 
 /*css for review section on home page*/
