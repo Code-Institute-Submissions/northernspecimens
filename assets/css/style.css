@@ -4,6 +4,15 @@ html {
 }
 
 
+/* this code was taken from tutorials on Google Fonts on code institute */
+
+
+/*All media bootstrap containers, rows and columns instructed by https://www.w3schools.com/bootstrap/default.asp, all images taken from Pixabay*/
+
+
+/* All fonts taken from Google fonts*/
+
+
 /*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing thank you to scaisEdge for helping with Google API*/
 
 
@@ -21,9 +30,6 @@ div#map {
 		height: 250px;
 	}
 }
-
-
-/*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US*/
 
 html,
 body {
@@ -118,7 +124,7 @@ hr {
 	box-shadow: 0 4px 8px 0 rgba(182, 182, 182, 0.699), 0 6px 20px 0 rgba(197, 197, 197, 0.671);
 }
 
-
+/*css for nav bar*/
 /*Thank you to the wonderful Projects by John Smilga https://vanilla-js-basic-project-4-navbar.netlify.app/for aiding with this complex navigation bar*/
 
 nav {
@@ -216,14 +222,14 @@ nav {
 	}
 }
 
-
-/*Home page css code. References: https://vannilla-js-basic-project-10-scroll.netlify.app/*/
+/*end nav css*/
+/*Home page css code/hero image. References: https://vannilla-js-basic-project-10-scroll.netlify.app/*/
 
 #home-page {
 	min-height: 100vh;
 	background: linear-gradient(rgba(252, 252, 252, 0.5), rgba(255, 255, 255, 0.7)), background url("https://i.imgur.com/M9JGebg.jpg") center/cover no-repeat;
 }
-
+/*References: https://vannilla-js-basic-project-10-scroll.netlify.app/*/
 .banner {
 	min-height: 100vh;
 	display: grid;
@@ -293,7 +299,7 @@ nav {
 #hidden-image {
 	margin-bottom: 10px;
 }
-
+/*media queries for about section*/
 @media (min-width: 320px) and (max-width: 767px) {
 	#fish img {
 		margin-bottom: 10px;
@@ -332,7 +338,7 @@ nav {
 	}
 }
 
-
+/*about css ends*/
 /*css for carousel/javascript slide show https://www.w3schools.com/bootstrap/bootstrap_carousel.asp*/
 
 #services {
@@ -358,7 +364,7 @@ nav {
 	text-align: center;
 	object-fit: cover;
 }
-
+/*carousel media queries*/
 @media (min-width: 320px) and (max-width: 767px) {
 	.slide-container .mySlides {
 		height: 400px;
@@ -379,7 +385,7 @@ nav {
 	}
 }
 
-
+/*end of services css*/ 
 /*css for the learn taxidermy section of the homepage*/
 
 #learn {
@@ -427,7 +433,7 @@ nav {
 	color: white;
 	background-color: black;
 }
-
+/*media queries for learn*/
 @media screen and (min-width: 1024px) {
 	#info h2 {
 		font-size: 3vw;
@@ -451,8 +457,8 @@ nav {
 	}
 }
 
-
-/*css for review section on home page*/
+/*learn css ends*/
+/*css for review section on home page taken from https://getbootstrap.com/docs/4.0/components/carousel/ and https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp*/
 
 #reviews {
 	width: 90%;
@@ -511,7 +517,7 @@ nav {
 	padding-bottom: 5px;
 	font-family: 'Montserrat', sans-serif;
 }
-
+/*media queries for reviews*/
 @media (min-width: 320px) and (max-width: 767px) {
 	.carousel-inner h2 {
 		font-size: 20px;
@@ -557,10 +563,8 @@ nav {
 	}
 }
 
-
+/*end of reviews css*/
 /*footer code i took alot of this section from my previous project as it seemed to suit both sites well. This was inspired by the code institute project*/
-
-
 /*https://stackoverflow.com/questions/9792816/apply-drop-shadow-to-border-top-only/ link for top box shadow*/
 
 footer {
@@ -594,7 +598,7 @@ footer p {
 	font-size: 150%;
 	padding: 5px;
 }
-
+/*footer media queries*/
 @media screen and (min-width: 1024px) {
 	footer p {
 		font-size: 20px;
@@ -611,7 +615,7 @@ footer p {
 }
 
 
-/*foot css ends*/
+/*footer css ends*/
 
 
 /*css for courses page*/
@@ -658,6 +662,7 @@ footer p {
 	}
 }
 
+/*courses ends*/
 
 /*booking page css*/
 
@@ -703,7 +708,6 @@ label {
 	font-size: 20px;
 }
 
-
 /*https://www.w3schools.com/html/html_forms.asp*/
 
 form .btn {
@@ -724,7 +728,7 @@ form .btn {
 .form-check {
 	margin: 0 auto;
 }
-
+/*booking css media queries*/
 @media (min-width: 320px) and (max-width: 767px) {
 	label {
 		font-size: 2vw;
@@ -748,7 +752,7 @@ form .btn {
 		transform: translate(100%, -10%);
 	}
 }
-
+/*booking css ends*/
 
 /*find us css*/
 
@@ -776,7 +780,7 @@ form .btn {
 	margin-right: 10%;
 	padding: 10px;
 }
-
+/*find us css media*/
 @media (min-width: 320px) and (max-width: 767px) {
 	#find-us h1 {
 		font-size: 6vw;
@@ -794,6 +798,7 @@ form .btn {
 	}
 }
 
+/*find us css ends*/
 
 /*this css code alters the thank page html. The below code was set for screens between 768 and 1025px.*/
 
@@ -839,7 +844,7 @@ form .btn {
 	color: white;
 	background-color: black;
 }
-
+/*thank css media queries*/
 @media (min-width: 320px) and (max-width: 767px) {
 	.thank-image {
 		max-height: 250px;
@@ -883,8 +888,8 @@ form .btn {
 		transform: translate(-30%, 30%);
 	}
 }
-
-
+/*thank css ends*/
+/*shop css starts*/
 /*https://stackoverflow.com/questions/54334562/center-image-in-bootstrap user Iskandar Reza*/
 
 #shop {
@@ -901,13 +906,14 @@ form .btn {
 #shop-front .btn {
 	margin-bottom: 20px;
 }
-
+/*shop media queries*/
 @media (min-width: 320px) and (max-width: 767px) {
 	#shop-front h1 {
 		font-size: 4vw;
 	}
 }
-
+/*shop css ends*/
+/*error 404 page starts*/
 #error {
 	width: 90%;
 	margin: auto 0;
@@ -918,7 +924,7 @@ form .btn {
 	font-size: 40px;
 	transform: translate(-10%, -400%);
 }
-
+/*error 404 media queries*/
 @media (min-width: 320px) and (max-width: 767px) {
 	#dark-owl .btn {
 		float: right;
@@ -932,3 +938,5 @@ form .btn {
 		transform: translate(-60%, -600%);
 	}
 }
+
+/*error page css ends*/
