@@ -54,51 +54,51 @@
          <h1>Order</h1>
       </div>
       <section>
-      <div id="book">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-12">
-                  <div id ="book-content">
-                     <h1>Fill in the form to book your course place</h1>
-                     <div id="form-section">
-                        <form onsubmit="return sendMail(this);">
-                           <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-                           <input type="text" name="email" class="form-control" id="email" placeholder="Email" required/>
-                           <textarea rows="5" name="project" class="form-control" id="project" placeholder="Purchase/Course Information" required></textarea>
-                           <h4>Select your course here:</h4>
-                           <div id="checkboxes">
-                              <div class="form-check form-check-inline">
-                                 <input class="form-check-input" type="checkbox" id="beginner" onclick="pressedOne()">
-                                 <label class="form-check-label" for="beginner"> Beginner</label>
+         <div id="book">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-12">
+                     <div id ="book-content">
+                        <h1>Fill in the form to book your course place</h1>
+                        <div id="form-section">
+                           <form onsubmit="return sendMail(this);">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Name" required/>
+                              <input type="text" name="email" class="form-control" id="email" placeholder="Email" required/>
+                              <textarea rows="5" name="project" class="form-control" id="project" placeholder="Purchase/Course Information" required></textarea>
+                              <h4>Select your course here:</h4>
+                              <div id="checkboxes">
+                                 <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="beginner" onclick="pressedOne()">
+                                    <label class="form-check-label" for="beginner"> Beginner</label>
+                                 </div>
+                                 <div class="form-check form-check-inline">
+                                    <input class="form-check-input"  type="checkbox" id="intermediate" onclick="pressedTwo()">
+                                    <label class="form-check-label" for="intermediate"> Intermediate</label>
+                                 </div>
+                                 <div class="form-check form-check-inline">
+                                    <input class="form-check-input"  type="checkbox" id="advanced" onclick="pressedThree()">
+                                    <label class="form-check-label" for="advanced"> Advanced</label>
+                                 </div>
+                                 <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="reptiles" onclick="pressedFour()">
+                                    <label class="form-check-label" for="reptiles">Reptiles</label>
+                                 </div>
+                                 <div class="form-check form-check-inline">
+                                    <input class="form-check-input"  type="checkbox" id="birds"  onclick="pressedFive()">
+                                    <label class="form-check-label" for="birds">Birds</label>
+                                 </div>
+                                 <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="mammals" onclick="pressedSix()">
+                                    <label class="form-check-label" for="mammals">Mammals</label>
+                                 </div>
+                                 <div class="col-md">
+                                    <p>Select a date:<input type="text" id="datepicker"></p>
+                                    <button type="submit" class="btn btn-secondary center-block" onclick>Send Request</button>
+                                 </div>
                               </div>
-                              <div class="form-check form-check-inline">
-                                 <input class="form-check-input"  type="checkbox" id="intermediate" onclick="pressedTwo()">
-                                 <label class="form-check-label" for="intermediate"> Intermediate</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                 <input class="form-check-input"  type="checkbox" id="advanced" onclick="pressedThree()">
-                                 <label class="form-check-label" for="advanced"> Advanced</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                 <input class="form-check-input" type="checkbox" id="reptiles" onclick="pressedFour()">
-                                 <label class="form-check-label" for="reptiles">Reptiles</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                 <input class="form-check-input"  type="checkbox" id="birds"  onclick="pressedFive()">
-                                 <label class="form-check-label" for="birds">Birds</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                 <input class="form-check-input" type="checkbox" id="mammals" onclick="pressedSix()">
-                                 <label class="form-check-label" for="mammals">Mammals</label>
-                              </div>
-                              <div class="col-md">
-                                 <p>Select a date:<input type="text" id="datepicker"></p>
-                                 <button type="submit" class="btn btn-secondary center-block" onclick>Send Request</button>
-                              </div>
-                           </div>
-                        </form>
+                           </form>
+                        </div>
                      </div>
-                  </div>
                   </div>
                </div>
             </div>
@@ -127,10 +127,10 @@
       <footer>
          <div class="container-fluid">
             <ul class="media justify-content-center col-12">
- <li><a class="link" href="https://www.instagram.com/northernspecimens/" target="_blank"><i class="fab fa-instagram"></i></a></li> 
-<li><a class="link" href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li> 
-<li><a class ="link" href="https://www.outlook.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
-<li><a class ="link" href="https://www.snapchat.com" target="_blank"><i class="fab fa-snapchat-ghost"></i></a></li> 
+               <li><a class="link" href="https://www.instagram.com/northernspecimens/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+               <li><a class="link" href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+               <li><a class ="link" href="https://www.outlook.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+               <li><a class ="link" href="https://www.snapchat.com" target="_blank"><i class="fab fa-snapchat-ghost"></i></a></li>
             </ul>
             <p>Copyright &copy; Northern Specimens.<br>
                Company 2018. All rights reserved.
