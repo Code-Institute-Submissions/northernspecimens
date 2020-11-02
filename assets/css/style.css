@@ -888,3 +888,28 @@ label {
         font-size: 4vw;
     }
     }
+
+#error {
+    width: 90%;
+    margin: auto 0;
+}
+
+#dark-owl .btn{
+    float: right;
+    font-size: 40px;
+    transform: translate(-10%, -400%);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+#dark-owl .btn{
+    float: right;
+    font-size: 40px;
+    transform: translate(-10%, -400%);
+}
+}
+
+@media screen and (min-width: 1024px) {
+    #dark-owl .btn {
+        transform: translate(-60%, -600%);
+    }
+}
