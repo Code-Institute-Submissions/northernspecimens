@@ -1,68 +1,69 @@
 # Northern Specimens
 
 ## Northern Specimens is a fully interactive website that is designed to educate the user around Taxidermy, allow them to book a course to learn Taxidermy and to purchase items. This buisness aims to teach the public how to preserve animals in unique ways, while profiting from the interest of the public. I designed this website as me and my partner own a small taxidermy buisness and we will be using a similar design for our own website. This website aims to create as much profit and traffic to the business as possible, while creating a positive user experience.
-The live version can be viewed here
+The live version can be viewed [here](https://kittencode91.github.io/interactive-frontend/)
 ## **User Experience UX**
-This website is for the buisness Northern Specimens, located in Northern England. They want to acheive an aesthetic and easy-to-use apprach to a complicated and often taboo topic - Taxidermy. 
-They wanted to achieve an aesthetic way of advertising products, pet preservation and their bespoke courses and social media. The website achieves these objectives by displaying wonderful images of taxidermy specimens, to catch the eye and give a positive experience for the user.
+This website is for the buisness Northern Specimens, located in Northern England. They want to acheive an aesthetic and easy-to-use approach to a complicated and often taboo topic - Taxidermy. 
+They wanted to achieve an attractive way of advertising products, pet preservation, their bespoke courses and social media. The website achieves these objectives by displaying wonderful images of taxidermy specimens, to catch the eye and give a positive experience for the user.
 The website also has a shop, courses and orders page that allow the user to easily contact the buisness and to purchase anything advertised.
-
-https://www.figma.com/file/AnaWjsfcUxc8iUiT7SR5Me/Frontend?node-id=0%3A1
-Wireframes^
 
 
 ## User Stories
 ### First Time Visitor Goals
 1. As a first-time customer/user, I want to easily understand the main purpose of the site and know what products I can purchase. 
-2. I want to to navigate the website easily, so I can find all the information I need to know and to buy the product i need.
-3. I want to be able to get in touch with the buisness and look at their social media.
+2. I want to navigate the website easily, so I can find all the information I need to know and to buy the product/course I want/need. I want to revieve a confirmation email also.
+3. I want to be able to get in touch with the buisness and look at their social media, look at any reviews to see if they are reliable/professional.
 ### Returning Visitor Goals
-1. As a Returning Visitor, I want to be able to contact the site owner to check the status of my order.
-2. I want to be inspired by the buisness when desining my own product.
-3. I want to be able to easily access any information I may have missed on my first visit. 
+1. As a Returning Visitor, I want to be able to easily contact the site owner to check the status of my order.
+2. I want to be able to book another course/make another purchase and check their social media.
+3. I want to be able to use the Google API to locate my course/the buisness so I can plan my journey there. 
 ### Frequent User Goals
-1. As a Frequent User, I want to be able to trade with the business effectively, through the contact form.
-2. I want to check back to their social media for any news/updates.
-3. I want to be able to pass on information to third parties in regards to buisness to buisness production deals.
+1. As a Frequent User, I want to be able to book anymore courses, advancing my skills through my learning. through the contact form.
+2. I want to be able to make purchases of new products and contact the buisness about custom orders/pet preservation.
+3. I want to be able to pass on information to third parties in regards to the buisness for potential collaborations and larger projects.
 
 ## Design
 
-* The main colours used on the website are gold, black and white.
-* The fonts used include: Dancing Script, Noto Sans JP and UnifrakturMaguntia.
-* Imagery: The imagery is very unique, using an oak-wood pattern, naturally seen when planing the trunks of trees. A gradient is used to highlight the logo and brand name.
+* The main colours used on the website are white, light-grey and black.
+* The fonts used include: 'Cinzel', serif, 'Montserrat' and sans-serif;
+* Imagery: The imagery is very aesthetic, many colourful photos give the website a minimal yet vibrant feel. All images are responsive to all devices.
 
-## Wireframes
-*[All Wireframes](documents/screenshots/full.png) screenshot of all wireframes together. Compelted 27th September.
-*[Desktop Wireframe](documents/screenshots/desktop.png) screenshots of desktop wireframe.
-*[Tablet Wireframe](documents/screenshots/tablet.png)
-*[Mobile Wireframe](documents/screenshots/mobile.png)
+## Wireframes.  Completed 27th September.
+
+## All
+![Full Wireframes](documents/screenshots/full.png).
+## Desktop
+![Desktop Wireframe](documents/screenshots/desktop.png).
+## Tablet
+![Tablet Wireframe](documents/screenshots/tablet.png)
+## Mobile
+![Mobile Wireframe](documents/screenshots/mobile.png)
 
 ## Features
-* The index.html page is used to give an aire of mystery to the website and increase interest in the web-user. Inspiration was taken from Alice in Wonderland with the woodland background,
-used to develop a hint to what Magnus Woodcraft is about.
-* The home.html page holds the first nagivation and webpage that is seen once the user clicks on the enter button on the previous page.
-A simple design is used to create more focus on the business itself, but a unique color palette is used to create consolidation and to make the site stand out visually.
-* The about.html page is self-explanatory but is very visual rather than giving the user lots of verbal information that is more difficult to remember. The images and carousels are used
-to create a simple ideas board that the user can then take with them, before designing their own custom order. 
-* The projects page is designed to attract attention from a more professional and
-wider reaching audience. This page also showcases the abilities of the carpentry company, showing potential buyers the levels of expertise that the carpenters possess. 
-
-* Finally the order.html and thank.html pages allow the user to submit their details, orders and ideas to the business. Allowing for simple and easy communication to the company. The thank.html page was developed as I was
-unable to code for an order form submission technique using PHP.
+* The index.html page is the home page of the site. The page is minimalist so that the images speak for themselves and the user is not over worked with too much text. A fully interactive nav bar is located to allow for full access to the rest of the site.
+A simple design is used to create more focus on the business products themselves. Vibrant images increases the user experience and the memorability of the pages/site to increase return rates and traffic. 
+* The shop.html page is set out with bootstrap grids and is fully responsive. The layout is simple to provide the user with easy browsing and minimal distractions. The user is directed to the book.html page to place an order when clicking "Buy" buttons.
+* The courses.html page is set out similar to the shop page, however this page also has hidden text shown through interactive use of toggle functions. The courses are simply described so the user can understand everything easier, letting them pick a course suitable for them. The user is directed to book.html when clicking "Book Now".
+* The book.html allows users to submit their details, place orders and contact the buisness. The form also sends the user an email with a template from Northern Specimens. The page also has a fully responsive and interactive Google Maps API so the user can locate their chosen course.
+* The findus.html is a page with buisness contact information. This is for users who may not want to purchase anything but contact the buisness for general enquires and to visit them.
+* The thank.html is directed from the book.html page and lets the user know an email is on its way.
 * The website is fully responsive on all device sizes such as desktop, tablet and phone.
 
 ### Future features
-* Future features to include into the website would be a blog, shop page and review/comments section.
+* Future features to include into the website would be a blog and checkout page.
 
 
 ## Technologies used:
-Languages used: **HTML5 and CSS3**
+Languages used: **HTML5, CSS3 and Javascript**
 * The project relies heavily on the [Bootstrap 4.4.1 CDN](http://getbootstrap.com/) to simplify resolution responses across all media platforms, allowing full responsiveness for both text and images through fluid-containers, carousels and Bootstrap-grid.
 * [Google Fonts](http://fonts.google.com/) and [Font Awesome libraries](http://fontawesome.com/6?next=%2F) used to allow a more unique design and variability than standard HTML/CSS3 font.
 * [Hover.css](http://ianlunn.github.io/Hover) allows for an alteration of visuals such as font color, family and changes to other features such as button size etc upon the cursor passing over the object.
-* [J Query](http://jquery.com/) was precoded into the template used for this project. 
+* [J Query](http://jquery.com/) was used in features such as the date picker. CDNs contributed to many of the interactive features. 
+* [Google Maps](https://developers.google.com/maps/documentation/javascript/overview) interactive API used to locate buisness and courses.
+* [EmailJs](https://dashboard.emailjs.com/) used to send a confirmation email to the user once form has been submitted.
 * [Git](http:///git-scm.com) was used as a browser add on to allow the commit of data to the repository from GitPod.
 * [GitHub](http://github.com) was used to store the code after it was pushed from GitPod using Git.
+
 ## Testing
 
 [W3C CSS Validator - complete](http://jigsaw.w3.org/css-validator/images/vcss-blue.png)
@@ -116,16 +117,18 @@ Also, the form will only be submitted when all fields are filled in appropriatel
 
 
 ## Further testing
-1. Navigation: Each navigational link directs the user to the desired page. For example, clicking on the Home link takes the user to the home page, clicking the about link takes the user to the about page etc.
-2. Navigation scrolling bar: Navigation bar remains fixed at the top of the page even when scrolling down.
+1. Navigation: Each navigational link directs the user to the desired page.
+2. Navigation bar turns into burger button when screen size is reduced. On click menu links are all displayed. Below div moves down.
 3. Image responses: Images on all pages are fully responsive and are increased/decreased to an appropriate size and resolution across all screen sizes.
 4. Content position: All fonts, page sections, carousels, headings, sub-headings, text sections, images and order-form remain in their appropriate positions and do not over-lap eachother, their respective parent divs or misalign, regardless of screen size. This was achieved by clicking "Open Source" after every alteration in the CSS code and running the new code, whilst expending and shrinking the display screen.
-5. Order form: The order form on the order.html page submits to the thank.html page only when all text fields have their respective information.
-6. Tested on all screen sizes, samsung galaxy s10, desktop and tablet.
+5. Port 8000 was used to check the position of divs and test functionality to interactive APIs forms, menus and media links.
+5. Order form was tested multiple times. The alert box is displayed with the form is submitted but only after the fields are filled in.
+6. Tested on all screen sizes, samsung galaxy s10, desktop, tablet and multiple browsers.
 
 * **Unfixed Bugs:** 
-1. The social media links do not seem to work on the open server, and the social media pages for this company do not exist yet.
-2. Sometimes the page needs to be refreshed to get the navbar to stick.
+1. The some of the social media pages for this company do not exist yet.
+2. The email submission is not validated as an email but will prevent form submission if the field is empty.
+3. The form submission button on the book.html page will not stay centered.
 
 ## Deployment
 
