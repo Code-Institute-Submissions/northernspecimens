@@ -18,7 +18,7 @@ The website also has a shop, courses and orders page that allow the user to easi
 2. I want to be able to book another course/make another purchase and check their social media.
 3. I want to be able to use the Google API to locate my course/the buisness so I can plan my journey there. 
 ### Frequent User Goals
-1. As a Frequent User, I want to be able to book anymore courses, advancing my skills through my learning. through the contact form.
+1. As a Frequent User, I want to be able to book anymore courses, advancing my skills through my learning.
 2. I want to be able to make purchases of new products and contact the buisness about custom orders/pet preservation.
 3. I want to be able to pass on information to third parties in regards to the buisness for potential collaborations and larger projects.
 
@@ -47,6 +47,7 @@ A simple design is used to create more focus on the business products themselves
 * The book.html allows users to submit their details, place orders and contact the buisness. The form also sends the user an email with a template from Northern Specimens. The page also has a fully responsive and interactive Google Maps API so the user can locate their chosen course.
 * The findus.html is a page with buisness contact information. This is for users who may not want to purchase anything but contact the buisness for general enquires and to visit them.
 * The thank.html is directed from the book.html page and lets the user know an email is on its way.
+* Fully responsive APIs, form, checkbuttons, carousels, reviews and date picker.
 * The website is fully responsive on all device sizes such as desktop, tablet and phone.
 
 ### Future features
@@ -58,7 +59,7 @@ Languages used: **HTML5, CSS3 and Javascript**
 * The project relies heavily on the [Bootstrap 4.4.1 CDN](http://getbootstrap.com/) to simplify resolution responses across all media platforms, allowing full responsiveness for both text and images through fluid-containers, carousels and Bootstrap-grid.
 * [Google Fonts](http://fonts.google.com/) and [Font Awesome libraries](http://fontawesome.com/6?next=%2F) used to allow a more unique design and variability than standard HTML/CSS3 font.
 * [Hover.css](http://ianlunn.github.io/Hover) allows for an alteration of visuals such as font color, family and changes to other features such as button size etc upon the cursor passing over the object.
-* [J Query](http://jquery.com/) was used in features such as the date picker. CDNs contributed to many of the interactive features. 
+* [J Query](https://jqueryui.com/datepicker/) was used in features such as the date picker. CDNs contributed to many of the interactive features. 
 * [Google Maps](https://developers.google.com/maps/documentation/javascript/overview) interactive API used to locate buisness and courses.
 * [EmailJs](https://dashboard.emailjs.com/) used to send a confirmation email to the user once form has been submitted.
 * [Git](http:///git-scm.com) was used as a browser add on to allow the commit of data to the repository from GitPod.
@@ -142,14 +143,15 @@ Also, the form will only be submitted when all fields are filled in appropriatel
 
 ## Credits
 * Code: Special reference to those that allowed for easy application of the carousels and their respective images. [Sitepoint creator - George Martsoukos](http://www.sitepoint.com/full-screen-bootstrap-carousel-random-initial-image/). Other code references and achknowledgements are listed in the style.css file. All HTML references are the same and are as follows:
-* All media bootstrap containers, rows and columns instructed by [w3schools](https://www.w3schools.com/bootstrap/default.asp)
-* [Navbar](https://www.w3schools.com/Css/css_navbar_horizontal.asp) and [position](https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp)
-* [Making it stick](https://stackoverflow.com/questions/4455021/freeze-navbar-at-top-of-page) took instruction from this website from user Dstarh8
-* [Responsive carousel images](https://www.w3schools.com/bootstrap/bootstrap_images.asp), my own images and decoration were added by me 
-* [Coding the carousel us ing Bootstrap](https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp) was used to establish the bootstrap coding for the carousel
+* All media bootstrap containers, rows and columns instructed by [w3schools](https://www.w3schools.com/bootstrap/default.asp) [Again](https://www.w3schools.com/bootstrap/bootstrap_carousel.asp)
+* [Navbar] Huge contribution to John Smilga (https://vanilla-js-basic-project-4-navbar.netlify.app/).
+* [Responsive carousel images](https://www.w3schools.com/w3css/w3css_slideshow.asp//)my own images and decoration were added by me.
+* [Coding the carousel using Bootstrap](https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp) was used to establish the bootstrap coding for the carousel
 * [Addition carousel coding tips](https://www.sitepoint.com/full-screen-bootstrap-carousel-random-initial-image/). By web developer George Martsouko was used to manipuate the position of the carousel to my liking.
+* [Google Maps](/*https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en_US*/)[And](https://developers.google.com/maps/documentation/javascript/examples/map-simple*/)[More](*https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing) thank to user scaisEdge.
+* [Date Picker](https://api.jqueryui.com/toggle/ ) and from [here](https://getbootstrap.com/docs/4.0/components/collapse/) and lots of tips from this [user](https://stackoverflow.com/questions/43168193/how-to-toggle-each-button-separately-on-multiple-buttons) Pablo.
 * ### Content: All content was written by the developer.
-* ### Media: All images were taken from [Pixabay](http://pixabay.com/), as they are royalty free.
+* ### Media: All images were taken from [Pixabay](http://pixabay.com/), as they are royalty free and from Norther Specimens with exclusive permission (I own the company).
 * ### Achknowledgments: To my mentor, code institute and my family for allowing this to be an enjoyable process.
 
 https://stackoverflow.com/questions/38662789/google-maps-js-example-not-showing 
