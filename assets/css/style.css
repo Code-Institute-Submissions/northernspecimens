@@ -411,33 +411,26 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
-	#skull img {
-        	transform: translate(0%, 0%);
-	}
-	#info {
-        background-color: blue;
-        transform: translate(15%, 0%);
-    
-	}
 	#info h2 {
 		font-size: 3vw;
 		margin-top: 10px;
 	}
 	#info .btn {
 		transform: translate(0%, 30%);
+        margin-bottom: 5px;
 	}
 	#learn {
 		margin-bottom: 10px;
 	}
 }
 
-@media screen and (min-width: 1150px) {
-	#info {
-		transform: translate(10%, 0%);
+@media screen and (min-width: 1350px) {
+	#learn {
+        width: 80%;
 	}
-	#skull img {
-		transform: translate(-10%, 0%);
-	}
+    #info {
+        margin-top: 10%;
+    }
 }
 
 
