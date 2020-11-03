@@ -64,28 +64,46 @@ Languages used: **HTML5, CSS3 and Javascript**
 ## Testing
 
 [W3C CSS Validator - complete](http://jigsaw.w3.org/css-validator/images/vcss-blue.png)
+[W3C HTML Validator - complete](https://validator.w3.org/)
 
 **Tested through Jshint**
 * Slight issue with Google Maps API, "const" and "new" declorations not recommended. But no major issues.
-
+![alt text](documents/screenshots/jshint.png)
+![alt text](documents/screenshots/cssvalid.png)
+![alt text](documents/screenshots/errorhtml.png)
+![alt text](documents/screenshots/bookhtml.png)
+![alt text](documents/screenshots/thankhtml.png)
+![alt text](documents/screenshots/findushtml.png)
+![alt text](documents/screenshots/courseshtml.png)
+![alt text](documents/screenshots/bookhtml.png)
+![alt text](documents/screenshots/indexhtml.png)
+![alt text](documents/screenshots/shophtml.png)
 
 ### First Time Visitor Goals
  **As a first-time customer/user, I want to easily understand the main purpose of the site and know what products I can purchase.**
 1. The home page is very minimalist, with plenty of taxidermy images. There is a clear nav bar that has links leading to all pages of the site.
 2. Upon entering the site the user is met with a hero image and an about section, explaining the purpose and objectives behind the company.
 3. The home page scrolls smoothly, each section has its clear markings. Their is a shop button on the hero image and a learn section to ask the user if they want to learn taxidermy and a button to the courses page.
-
+![alt text](documents/screenshots/navdesktop.png)
+![alt text](documents/screenshots/navbar.png)
  **I want to navigate the website easily, so I can find all the information I need to know and to buy the product/course I want/need. I want to revieve a confirmation email also.**
 1. The navigation bar is accessible from every page on the site, or a home button is presented. Buttons are clearly labelled to tell the user where they lead.
 2. The shop and course pages clearly state what is avaible for purchase and the price for each product. A form is submitted on the order page (directly or indirectly from the nav or shop/course buttons). This sends and email.
 3. A thank you page is presented and an alert box appears upon submission. Checkboxes indicate if a course is available or not. A date picker allows the user to select a date for their convenience. 
 Also, the form will only be submitted when all fields are filled in. 
-
+![alt text](documents/screenshots/shop.png)
+![alt text](documents/screenshots/courses.png)
+![alt text](documents/screenshots/check.png)
+![alt text](documents/screenshots/gmail.png)
+![alt text](documents/screenshots/form.png)
+![alt text](documents/screenshots/datepicker.png)
  **I want to be able to get in touch with the buisness and look at their social media, look at any reviews to see if they are reliable/professional.**
 1. A find us page is accessible from the nav bar across all pages of the site.
 2. A Google Maps API with clear markers shows the location of the buisness.
 3. Reviews are displayed at the bottom of the home page to verify quilty and reliability of the buisness. Social media links are at the bottom of every page.
-
+![alt text](documents/screenshots/location.png)
+![alt text](documents/screenshots/reviews.png)
+![alt text](documents/screenshots/findus.png)
 #### Returning Visitor Goals
  **As a Returning Visitor, I want to be able to easily contact the site owner to check the status of my order.**
 1. The companies social media accounts are accessible from the icons at the bottom of every page.
@@ -105,9 +123,9 @@ Also, the form will only be submitted when all fields are filled in.
  **As a Frequent User, I want to be able to book anymore courses, advancing my skills through my learning.**
 1. As mentioned previously the courses pages and form can be access and new key skills learnt.
 2. The toggle buttons on the courses page give clear information to what the courses entail.
-
+![alt text](documents/screenshots/toggle.png)
  **I want to be able to make purchases of new products and contact the buisness about custom orders/pet preservation.**
-1. The social media links are easily accesible through any page of the site, allowing the customer to check back for ner products.
+1. The social media links are easily accesible through any page of the site, allowing the customer to check back for new products.
 2. The companies pages on instagram, youtube and snapchat will also have daily updates that the customer can subscribe to.
 3. contact info means they user can contact the buisness for larger, custom orders/pet preservation.
 
