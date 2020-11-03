@@ -58,8 +58,11 @@ h1 {
 }
 
 h2 {
-	text-align: center;
 	color: black;
+	font-family: 'Cinzel', serif;
+	padding: 20px;
+	text-decoration: underline;
+	text-align: center;
 }
 
 h3 {
@@ -916,7 +919,7 @@ form .btn {
 /*error 404 page starts*/
 #error {
 	width: 90%;
-	margin: auto 0;
+	margin: 0 auto;
 }
 
 #dark-owl .btn {
