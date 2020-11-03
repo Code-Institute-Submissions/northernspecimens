@@ -142,7 +142,9 @@ Also, the form will only be submitted when all fields are filled in.
 5. Port 8000 was used to check the position of divs and test functionality to interactive APIs forms, menus and media links.
 5. Order form was tested multiple times. The alert box is displayed with the form is submitted but only after the fields are filled in.
 6. Tested on all screen sizes, samsung galaxy s10, desktop, tablet and multiple browsers.
-
+7. Tested on Github pages to check if site was uptodate with workspace and repository.
+8. 404 error page tested.
+![alt text](documents/screenshots/error.png)
 * **Unfixed Bugs:** 
 1. The some of the social media pages for this company do not exist yet.
 2. The email submission is not validated as an email but will prevent form submission if the field is empty.
