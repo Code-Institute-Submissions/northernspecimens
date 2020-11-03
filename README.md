@@ -71,7 +71,6 @@ Languages used: **HTML5, CSS3 and Javascript**
 ![alt text](documents/screenshots/jshint.png)
 ![alt text](documents/screenshots/cssvalid.png)
 ![alt text](documents/screenshots/errorhtml.png)
-![alt text](documents/screenshots/bookhtml.png)
 ![alt text](documents/screenshots/thankhtml.png)
 ![alt text](documents/screenshots/findushtml.png)
 ![alt text](documents/screenshots/courseshtml.png)
