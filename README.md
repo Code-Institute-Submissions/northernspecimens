@@ -176,7 +176,7 @@ Also, the form will only be submitted when all fields are filled in.
 * [Else/if](https://www.w3schools.com/jsref/jsref_if.asp) lots of help from this for checkboxes.
 * [emailJs](https://dashboard.emailjs.com/) was used to send the email to googlemail from the form.
 * [Reviews](https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp) taken from this link on w3schools and also from the bootstrap [site](https://getbootstrap.com/docs/4.0/components/carousel/).
-* [Rows](https://www.w3schools.com/jsref/jsref_if.asp) this was seriously helpful for both courses and shop pages from user Iskandar Reza.
+* [Rows](https://www.w3schools.com/jsref/jsref_if.asp) this was seriously helpful for both courses and shop pages from user Iskandar Reza. Bootstrap was also [used](https://getbootstrap.com/docs/4.0/layout/grid/) for the shop and courses pages.
 * ### Content: All content was written by the developer.
 * ### Media: All images were taken from [Pixabay](http://pixabay.com/), as they are royalty free and from Norther Specimens with exclusive permission (I own the company).
 * ### Achknowledgments: To my mentor, code institute and my family for allowing this to be an enjoyable process.
